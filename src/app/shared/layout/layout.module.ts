@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { FooterComponent } from './components/footer/footer.component';
 import { SocialFooterComponent } from './components/social-footer/social-footer.component';
@@ -13,8 +12,7 @@ import { SocialFooterComponent } from './components/social-footer/social-footer.
     FlexLayoutModule,
 
     // Material
-    MatIconModule,
-    MatTooltipModule
+    MatIconModule
   ],
   declarations: [
     FooterComponent,
