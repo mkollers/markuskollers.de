@@ -1,0 +1,32 @@
+:host {
+  background: #312723;
+  display: block;
+  text-align: center;
+  padding: 3em;
+}
+
+.mat-icon {
+  height: 80px;
+  width: 80px;
+  margin: 0 0.3em;
+}
+
+@media (max-width: 599px) {
+  .mat-icon {
+    height: 40px;
+    width: 40px;
+    margin: 0 0.2em;
+  }
+}
+
+a {
+    display: inline-block;
+}
+
+::ng-deep .st0 {
+  stroke: #fff !important;
+}
+
+a:hover ::ng-deep .st0 {
+  stroke: #c71f3b !important;
+}
