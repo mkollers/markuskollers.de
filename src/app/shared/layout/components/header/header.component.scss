@@ -1,16 +1,17 @@
 :host {
   display: block;
-  background: #312723;
+  background: #896b5f;
+  background-image: url(/assets/wooden-background.png);
   padding: 15px;
   text-align: center;
-  border-bottom: 5px solid #c71f3b;
+  border-bottom: 5px solid #3d2f2a;
 }
 
 img {
     border-radius: 50%;
 }
 
-h2 {
+h1 {
     color: #fff;
     font-weight: 300;
 }

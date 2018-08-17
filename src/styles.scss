@@ -1,7 +1,21 @@
-html, body {
+html,
+body {
   color: #333333;
   background: #f3f3f3;
   height: 100%;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  color: #3d2f2a;
+}
+
+h2,
+h3,
+  {
+  color: #896b5f;
+  border-bottom: 1px solid #896b5f;
+  padding: 8px 0;
+  font-weight: 400;
 }
