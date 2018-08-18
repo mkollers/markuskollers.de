@@ -8,14 +8,19 @@
 }
 
 img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 h1 {
-    color: #fff;
-    font-weight: 300;
+  color: #fff;
+  font-weight: 300;
 }
 
-b, strong {
-    font-weight: 400;
+b,
+strong {
+  font-weight: 400;
+}
+
+a:hover ::ng-deep img {
+  box-shadow: 0 0 20px rgba(255, 255, 255, .5);
 }
