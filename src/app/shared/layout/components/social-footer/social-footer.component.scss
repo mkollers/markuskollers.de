@@ -28,6 +28,10 @@ a {
   stroke: #fff !important;
 }
 
-a:hover ::ng-deep .st0 {
-  stroke: #c71f3b !important;
+a ::ng-deep svg {
+  transition: all .4s;
+}
+
+a:hover ::ng-deep svg {
+  filter: drop-shadow( 2px 2px 4px #fff );
 }
