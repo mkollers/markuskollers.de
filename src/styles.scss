@@ -1,21 +1,38 @@
+@import './green-blue-theme';
+@import './yellow-theme';
+@import 'app/shared/layout/components/header/_header-theme';
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($green-blue-theme);
+@include header-theme($green-blue-theme);
+
+$general-typography: mat-typography-config(
+  $font-family: 'Noto Sans, sans-serif',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+$secondary-typography: mat-typography-config(
+  $font-family: 'Fjalla One, sans-serif',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+@include mat-core($general-typography);
+@include mat-toolbar-typography($secondary-typography);
+
 html,
 body {
-  color: #333333;
-  background: #f3f3f3;
-  height: 100%;
   margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  height: 100%;
+  color: rgba(150,150,150,0.8);
 }
 
-a {
-  color: #3d2f2a;
-}
-
+h1,
 h2,
 h3,
-  {
-  color: #896b5f;
-  border-bottom: 1px solid #896b5f;
-  padding: 8px 0;
-  font-weight: 400;
+h4 {
+  font-family: 'Fjalla One', sans-serif;
 }
