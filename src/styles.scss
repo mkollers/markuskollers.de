@@ -3,13 +3,6 @@
 @import 'app/shared/layout/components/header/_header-theme';
 @import 'app/shared/layout/components/social-bar/_social-bar-theme';
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include angular-material-theme($green-blue-theme);
-@include header-theme($green-blue-theme);
-@include social-bar-theme($green-blue-theme);
-
 $general-typography: mat-typography-config(
   $font-family: 'Noto Sans, sans-serif',
   $headline: mat-typography-level(32px, 48px, 700),
@@ -25,11 +18,18 @@ $secondary-typography: mat-typography-config(
 @include mat-core($general-typography);
 @include mat-toolbar-typography($secondary-typography);
 
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($green-blue-theme);
+@include header-theme($green-blue-theme);
+@include social-bar-theme($green-blue-theme);
+
 html,
 body {
   margin: 0;
   height: 100%;
-  color: rgba(150,150,150,0.8);
+  font-family: 'Noto Sans', sans-serif;
 }
 
 h1,

@@ -1,10 +1,11 @@
 :host {
   display: block;
-  padding: 15px;
+  padding: 0 2em;
+  border-top: 1px solid rgba(0, 0, 0, .3);
+  background: #fff;
 }
 
 p {
-  color: #999;
   font-size: 0.9em;
   font-weight: 400;
   letter-spacing: 0.06em;
@@ -12,6 +13,5 @@ p {
 }
 
 a {
-  color: #fff;
   text-decoration: none;
 }
