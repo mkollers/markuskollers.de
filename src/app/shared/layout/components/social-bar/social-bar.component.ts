@@ -3,11 +3,11 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'mk-social-footer',
-  templateUrl: './social-footer.component.html',
-  styleUrls: ['./social-footer.component.scss']
+  selector: 'mk-social-bar',
+  templateUrl: './social-bar.component.html',
+  styleUrls: ['./social-bar.component.scss']
 })
-export class SocialFooterComponent {
+export class SocialBarComponent {
 
   constructor(
     private _iconRegistry: MatIconRegistry,

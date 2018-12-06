@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SocialFooterComponent } from './components/social-footer/social-footer.component';
+import { SocialBarComponent } from './components/social-bar/social-bar.component';
 
 @NgModule({
   imports: [
@@ -22,12 +22,12 @@ import { SocialFooterComponent } from './components/social-footer/social-footer.
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SocialFooterComponent
+    SocialBarComponent
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    SocialFooterComponent
+    SocialBarComponent
   ]
 })
 export class LayoutModule { }

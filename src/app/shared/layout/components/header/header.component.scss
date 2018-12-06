@@ -1,6 +1,5 @@
 :host {
   display: block;
-  font-size: 32px;
 }
 
 :host .mat-toolbar {
@@ -8,6 +7,7 @@
   padding: 0;
   letter-spacing: 2px;
   background: transparent;
+  font-size: 16px;
 }
 
 h1 {
@@ -28,5 +28,3 @@ section {
 .content {
   padding-left: 2em;
 }
-
-
