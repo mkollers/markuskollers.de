@@ -1,12 +1,15 @@
-<mat-toolbar fxLayout="row wrap">
-  <section class="accent" fxFlexOrder="1" fxFlexOrder.gt-sm="2" fxFlex.gt-sm="50%" fxFlex="100%">&nbsp;
-  </section>
-  <section class="content" fxFlexOrder="2" fxFlexOrder.gt-sm="1" fxFlex.gt-sm="50%" fxFlex="100%" fxLayoutAlign="center start"
-    fxLayout="column">
-    <div>
+<mat-toolbar fxLayout="column">
+  <mat-toolbar-row id="main-nav" fxLayoutAlign="end center">
+    <a mat-button>About me</a>
+    <a mat-button>Blog</a>
+  </mat-toolbar-row>
+  <mat-toolbar-row id="intro" fxLayout="row wrap" fxLayoutAlign.gt-xs="center center" fxLayoutGap="16px">
+    <img fxHide.gt-xs src="/assets/markus_kollers.jpg" width="100">
+    <img fxHide.xs src="/assets/markus_kollers.jpg" width="200">
+    <section fxFlex class="intro-text">
       <span class="light">Hallo,</span>
       <h1>Ich bin Markus</h1>
-      <span>Freiberuflicher Software-Entwickler</span>
-    </div>
-  </section>
+      <p>Ich konzipiere und programmiere Online-Software.</p>
+    </section>
+  </mat-toolbar-row>
 </mat-toolbar>

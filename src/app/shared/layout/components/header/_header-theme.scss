@@ -1,8 +1,4 @@
 @mixin header-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
-
-  mk-header .accent {
-    background: linear-gradient(to top right, mat-color($primary), mat-color($accent));
-  }
 }

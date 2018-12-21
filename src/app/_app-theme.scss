@@ -1,0 +1,8 @@
+@mixin app-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .gradient {
+    background: linear-gradient(to top right, mat-color($primary, 500, .5), mat-color($accent, 500, .5));
+  }
+}

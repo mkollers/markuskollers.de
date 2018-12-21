@@ -1,8 +1,45 @@
+:host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 main {
-  min-height: calc(100% - 20em - 80px - 86px - 4em);
-  padding: 2em;
+  min-height: calc(100% - 2em);
+  margin: 2em auto 0 auto;
+  background: #fff;
+  max-width: 800px;
+}
+
+@media (max-width: 800px) {
+  main {
+    margin: 2em 2em 0 2em;
+  }
+}
+
+:host ::ng-deep router-outlet+* {
+  display: block;
+  min-height: calc(100vH - 2em - 56px);
+  overflow: auto;
+  position: relative;
+}
+
+mk-header {
+  z-index: 2;
+  position: relative;
 }
 
 mk-social-bar {
   position: relative;
+}
+
+.gradient {
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
