@@ -19,20 +19,13 @@
 }
 
 #intro {
-  height: calc(300px - 56px - 2em);
+  height: 78px;
   font-size: 12px;
 }
 
 #intro img {
   border-radius: 50%;
   margin-bottom: 16px;
-}
-
-@media (max-width: 599px) {
-  #intro img {
-    position: absolute;
-    top: 48px;
-  }
 }
 
 #intro h1 {
