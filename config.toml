@@ -1,0 +1,4 @@
+baseURL = "https://markuskollers.de/"
+languageCode = "en-us"
+title = "Markus Kollers"
+theme = "hello-friend-ng"

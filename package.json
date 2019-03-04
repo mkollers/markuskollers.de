@@ -1,0 +1,22 @@
+{
+  "name": "markuskollers.de",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkollers/markuskollers.de.git"
+  },
+  "author": "Markus Kollers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkollers/markuskollers.de/issues"
+  },
+  "homepage": "https://github.com/mkollers/markuskollers.de#readme",
+  "devDependencies": {
+    "hugo-cli": "^0.10.0"
+  }
+}
