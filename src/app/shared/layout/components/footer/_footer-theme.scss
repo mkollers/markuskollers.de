@@ -1,9 +1,0 @@
-@mixin footer-theme($theme) {
-    $primary: map-get($theme, primary);
-    $accent: map-get($theme, accent);
-  
-    mk-footer a {
-      color: mat-color($primary);
-    }
-  }
-  

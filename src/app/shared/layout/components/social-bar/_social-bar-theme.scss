@@ -1,8 +1,0 @@
-@mixin social-bar-theme($theme) {
-  $primary: map-get($theme, primary);
-  $accent: map-get($theme, accent);
-
-  mk-social-bar a:hover svg .st0 {
-    stroke: mat-color($primary) !important;
-  }
-}
