@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "hugo"
+    "build": "hugo",
+    "start": "hugo server -D"
   },
   "repository": {
     "type": "git",
