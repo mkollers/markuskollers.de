@@ -1,4 +1,59 @@
 baseURL = "https://www.markuskollers.de/"
-languageCode = "en-us"
+languageCode = "en-US"
 title = "Markus Kollers"
 theme = "hello-friend-ng"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Homepage and blog by Markus Kollers"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+[languages]
+  [languages.en]
+    title = "Markus Kollers"
+    subtitle = "Software Architect and Web developer expert"
+    keywords = ""
+    copyright = "Markus Kollers"
+    readOtherPosts = "Read other posts"
+  [languages.en.params.logo]
+      logoText = "hello visitor"
+      logoHomeLink = "/"
+  [languages.de]
+    title = "Markus Kollers"
+    subtitle = "Software Architekt and Experte für Webentwicklung"
+    keywords = ""
+    copyright = "Markus Kollers"
+  [languages.de.params.logo]
+      logoText = "Hallo Besucher"
+      logoHomeLink = "/"
+  [languages.de.menu]
+      [[languages.de.menu.main]]
+        identifier = "ueber-mich"
+        name = "Über mich"
+        url = "/ueber-mich"
+      [[languages.de.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog"
+
+# And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
