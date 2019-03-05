@@ -4,7 +4,7 @@ title = "Markus Kollers"
 theme = "markus-kollers"
 
 [params]
-  customCSS = ["css/style.css"]
+  customCSS = ["/css/style.css"]
 
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
