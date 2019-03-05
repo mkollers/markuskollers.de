@@ -1,9 +1,11 @@
 baseURL = "https://www.markuskollers.de/"
 languageCode = "en-US"
 title = "Markus Kollers"
-theme = "hello-friend-ng"
+theme = "markus-kollers"
 
 [params]
+  custom_css = ["css/style.css"]
+
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
