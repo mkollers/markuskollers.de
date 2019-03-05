@@ -30,11 +30,11 @@
 </script>
 
 {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+<link rel="preload" as="style" href="{{ $style.Permalink }}">
 
 {{ range $val := $.Site.Params.customCSS }}
 {{ if gt (len $val) 0 }}
-<link rel="stylesheet" type="text/css" href="{{ $val }}">
+<link rel="preload" as="style" type="text/css" href="{{ $val }}">
 {{ end }}
 {{ end }}
 
