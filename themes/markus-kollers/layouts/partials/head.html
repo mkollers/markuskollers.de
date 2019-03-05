@@ -20,14 +20,7 @@
 {{ end }}
 
 <!-- CSS -->
-<script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-<script>
- WebFont.load({
-    google: {
-      families: ['Source Sans Pro:400,700,400italic,700italic', 'Source Code Pro']
-    }
-  });
-</script>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
 
 {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="preload" as="style" href="{{ $style.Permalink }}">
