@@ -16,6 +16,27 @@ theme = "markus-kollers"
   keywords = "homepage, blog, science, informatics, development, programming"
   images = [""]
 
+  # Social
+  [[params.social]]
+    name = "email"
+    url  = "mailto:mail@markuskollers.de"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/MaKollers"  
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/mkollers"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/markus-kollers-4b8b2a128/"
+
+  [[params.social]]
+    name = "xing"
+    url  = "https://www.xing.com/profile/Markus_Kollers"
+
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
   # Default theme "light" or "dark"
@@ -29,7 +50,7 @@ theme = "markus-kollers"
     copyright = "Markus Kollers"
     readOtherPosts = "Read other posts"
   [languages.en.params.logo]
-      logoText = "hello visitor"
+      logoText = "$ cd /home/"
       logoHomeLink = "/"
   [languages.de]
     title = "Markus Kollers"
@@ -37,7 +58,7 @@ theme = "markus-kollers"
     keywords = ""
     copyright = "Markus Kollers"
   [languages.de.params.logo]
-      logoText = "Hallo Besucher"
+      logoText = "$ cd /home/"
       logoHomeLink = "/"
   [languages.de.menu]
       [[languages.de.menu.main]]
