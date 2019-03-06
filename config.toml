@@ -43,7 +43,7 @@ theme = "markus-kollers"
       [[languages.de.menu.main]]
         identifier = "ueber-mich"
         name = "Über mich"
-        url = "/ueber-mich"
+        url = "/"
       [[languages.de.menu.main]]
         identifier = "blog"
         name = "Blog"
@@ -54,7 +54,7 @@ theme = "markus-kollers"
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "/about"
+    url        = "/"
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
