@@ -1,6 +1,8 @@
 {{ define "main" }}
 <div id="home-center">
-    <img height="192" id="me-myself" src="/img/markus-kollers.jpg" alt="Profile picture of Markus Kollers">
+    <img id="me-myself" srcset=" /img/markus-kollers-384x384.png 384w, /img/markus-kollers-192x192.png 192w"
+        src="/img/markus-kollers-384x384.png" sizes="(max-width: 450px) 60vw, (max-width: 900px) 45vw, 20vw"
+        alt="Profile picture of Markus Kollers">
     <h1 id="home-title">{{ .Site.Title }}</h1>
 
     {{- with .Site.Params.homeSubtitle }}
