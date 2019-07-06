@@ -83,11 +83,11 @@ $accent: mat-palette($yellow);
 $warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$theme: mat-dark-theme($primary, $accent, $warn);
+$theme: mat-light-theme($primary, $accent, $warn);
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Raleway, "Helvetica Neue", sans-serif;
 }

@@ -1,10 +1,10 @@
 @import './styles/theme';
 
-@mixin custom-theme($theme) {
+@mixin custom-theme($theme, $width) {
 }
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($theme);
-@include custom-theme($theme);
+@include custom-theme($theme, 1170px);

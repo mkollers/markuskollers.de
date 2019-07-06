@@ -1,0 +1,16 @@
+@import '../styles/constants';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: $width;
+  padding: 0 67px;
+}
+
+
+:host ::ng-deep router-outlet+* {
+  display: flex;
+  margin-top: 100px;
+  min-height: calc(100vH - 100px);
+}
