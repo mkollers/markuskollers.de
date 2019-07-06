@@ -31,3 +31,19 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   height: 50px;
 }
+
+.logo {
+  color: rgba(0, 0, 0, 0.67);
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.logo-cursor {
+  animation: cursor 1s infinite;
+  border-radius: 1px;
+  display: inline-block;
+  height: 1.125rem;
+  margin-left: 5px;
+  width: 10px;
+}

@@ -1,0 +1,18 @@
+@import "~@angular/material/theming";
+
+@mixin header-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  @keyframes cursor {
+
+    from,
+    to {
+      background: transparent;
+    }
+
+    50% {
+      background: mat-color($primary, 500);
+    }
+  }
+}
