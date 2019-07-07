@@ -1,9 +1,10 @@
-import { Component, HostListener, HostBinding } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostBinding, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
   @HostBinding('class.small') isSmall = false;
