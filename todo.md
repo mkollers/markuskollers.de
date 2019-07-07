@@ -1,5 +1,4 @@
 * Angular universal
-* Favicon
 * About text
 * Contact links
 * Imprint and privacy
@@ -7,3 +6,4 @@
 * Ease in animation
 * Footer
 * Mobile optimization (Menu)
+* Social Media sharing 
