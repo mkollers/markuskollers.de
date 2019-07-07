@@ -5,12 +5,12 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: $width;
-  padding: 0 67px;
+  padding: 0 $padding;
 }
 
 
 :host ::ng-deep router-outlet+* {
   display: flex;
-  margin-top: 100px;
-  min-height: calc(100vH - 100px);
+  margin-top: 86px;
+  min-height: calc(100vH - 86px);
 }
