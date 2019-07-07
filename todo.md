@@ -1,6 +1,5 @@
 * Angular universal
 * Favicon
-* Avatar 
 * About text
 * Contact links
 * Imprint and privacy
@@ -9,3 +8,4 @@
 * CI Build
 * Ease in animation
 * Footer
+* Mobile optimization (Menu)
