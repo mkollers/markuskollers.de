@@ -1,4 +1,3 @@
-* Angular universal
 * Imprint and privacy
 * CI Build
 * Mobile optimization (Menu)
