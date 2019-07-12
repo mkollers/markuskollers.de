@@ -1,8 +1,10 @@
 @import './styles/theme';
-@import './app/pages/landing-page/landing-page-theme';
-@import './app/shared/layout/components/header/header-theme';
+@import './app/pages/landing-page/_landing-page-theme';
+@import './app/shared/layout/components/footer/_footer-theme';
+@import './app/shared/layout/components/header/_header-theme';
 
 @mixin custom-theme($theme) {
+  @include footer-theme($theme);
   @include header-theme($theme);
   @include landing-page-theme($theme);
 }

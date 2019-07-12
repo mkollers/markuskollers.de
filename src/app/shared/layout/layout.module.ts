@@ -1,19 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 
+import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [HeaderComponent],
-  exports: [HeaderComponent],
+  declarations: [
+    FooterComponent,
+    HeaderComponent
+  ],
+  exports: [
+    FooterComponent,
+    HeaderComponent
+  ],
   imports: [
     CommonModule,
     RouterModule,
-
-    // Material
-    MatToolbarModule
   ]
 })
 export class LayoutModule { }

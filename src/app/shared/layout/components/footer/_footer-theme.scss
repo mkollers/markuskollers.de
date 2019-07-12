@@ -1,0 +1,18 @@
+@import "~@angular/material/theming";t
+
+@mixin footer-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+
+  app-footer nav a {
+    border-bottom: 1px solid transparent;
+    color: mat-color($foreground, text, .87);
+
+    &:hover,
+    &.active {
+      border-bottom: 1px solid mat-color($primary, 500);
+      color: mat-color($primary, 500);
+    }
+  }
+}

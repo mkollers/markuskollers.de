@@ -12,5 +12,9 @@
 :host ::ng-deep router-outlet+* {
   display: flex;
   margin-top: 86px;
-  min-height: calc(100vH - 86px);
+  min-height: calc(100vH - 86px - 102px);
+}
+
+app-footer {
+  margin-top: 32px;
 }
