@@ -1,0 +1,15 @@
+@import "~@angular/material/theming";
+
+@mixin landing-page-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+
+  app-landing-page #social a {
+    color: mat-color($foreground, text, .87);
+
+    &:hover {
+      color: mat-color($primary, 500);
+    }
+  }
+}

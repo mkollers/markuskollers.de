@@ -1,5 +1,6 @@
 :host {
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #avatar {
@@ -8,6 +9,12 @@
 }
 
 #avatar img {
-  width: 100%;
   height: auto;
+  width: 100%;
+}
+
+#social a {
+  margin: 0 8px;
+
+    transition: color .3s ease-in-out;
 }

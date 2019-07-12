@@ -1,8 +1,10 @@
 @import './styles/theme';
+@import './app/pages/landing-page/landing-page-theme';
 @import './app/shared/layout/components/header/header-theme';
 
 @mixin custom-theme($theme) {
   @include header-theme($theme);
+  @include landing-page-theme($theme);
 }
 
 // Include theme styles for core and each component used in your app.
