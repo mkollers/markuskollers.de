@@ -5,3 +5,6 @@
 * Footer
 * Mobile optimization (Menu)
 * Social Media sharing 
+* Large about text
+* Skills
+* Portfolio
