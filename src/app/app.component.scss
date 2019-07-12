@@ -11,6 +11,7 @@
 
 :host ::ng-deep router-outlet+* {
   display: flex;
+  flex-direction: column;
   margin-top: 86px;
   min-height: calc(100vH - 86px - 102px);
 }

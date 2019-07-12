@@ -16,7 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     CommonModule,
-    RouterModule,
+    RouterModule
   ]
 })
 export class LayoutModule { }

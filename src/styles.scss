@@ -14,3 +14,12 @@
 // that you are using.
 @include angular-material-theme($theme);
 @include custom-theme($theme);
+
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5;
+}
