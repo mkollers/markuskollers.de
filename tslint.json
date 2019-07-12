@@ -4,7 +4,7 @@
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
-      "severity": "warn"
+      "severity": "warning"
     },
     "component-class-suffix": true,
     "contextual-lifecycle": true,
@@ -15,6 +15,7 @@
       "app",
       "camelCase"
     ],
+    "eofline": true,
     "component-selector": [
       true,
       "element",
@@ -23,7 +24,8 @@
     ],
     "import-blacklist": [
       true,
-      "rxjs/Rx"
+      "rxjs/Rx",
+      "lodash"
     ],
     "interface-name": false,
     "max-classes-per-file": false,
@@ -43,7 +45,7 @@
         ]
       }
     ],
-    "no-consecutive-blank-lines": false,
+    "no-consecutive-blank-lines": true,
     "no-console": [
       true,
       "debug",
@@ -72,19 +74,29 @@
       true,
       "single"
     ],
-    "trailing-comma": false,
+    "trailing-comma": [true, {
+      "multiline": "never",
+      "singleline": "never"
+    }],
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
-    "no-input-rename": true,
+    "no-input-rename": false,
     "no-inputs-metadata-property": true,
     "no-output-native": true,
     "no-output-on-prefix": true,
-    "no-output-rename": true,
+    "no-output-rename": false,
     "no-outputs-metadata-property": true,
+    "no-unused-css": true,
+    "no-unused-vars": true,
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
+    "use-pipe-transform-interface": true,
+    "variable-name": {
+      "options": [
+        "allow-leading-underscore"
+      ]
+    }
   },
   "rulesDirectory": [
     "codelyzer"
