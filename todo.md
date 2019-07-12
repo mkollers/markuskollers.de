@@ -1,6 +1,4 @@
 * Angular universal
-* About text
-* Contact links
 * Imprint and privacy
 * CI Build
 * Ease in animation
