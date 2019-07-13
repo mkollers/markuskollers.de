@@ -16,8 +16,8 @@ jobs:
             - "node_modules"
       - run:
           name: angular-build
-          command: ng build --prod --no-progress && ng run markuskollers-de:server:production --bundleDependencies all --no-progress
-#      - run:
+          command: npm run build:client-and-server-bundles
+      - run:
 #          name: angular-test
 #          command: npm test
 #      - store_artifacts:
