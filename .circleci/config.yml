@@ -16,7 +16,7 @@ jobs:
             - "node_modules"
       - run:
           name: angular-build
-          command: npm run build
+          command: npm run build:client-and-server-bundles
 #      - run:
 #          name: angular-test
 #          command: npm test
