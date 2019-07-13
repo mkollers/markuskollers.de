@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node --max_old_space_size=4096 dist/server",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,7 +12,7 @@
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod --no-progress && ng run markuskollers-de:server:production --bundleDependencies all --no-progress",
-    "deploy": "npm run build:ssr && gcloud app deploy app.yaml --project markuskollers-de"
+    "deploy": "gcloud app deploy app.yaml --project markuskollers-de"
   },
   "private": true,
   "dependencies": {
