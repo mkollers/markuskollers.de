@@ -24,7 +24,7 @@ jobs:
           path: coverage/TESTS.xml
       - run:
           name: Prepare artifact
-          command: mkdir artifact && cp app.yaml artifact && cp dist/** artifact/dist
+          command: mkdir artifact && cp app.yaml artifact && cp dist artifact
       - store_artifacts:
           path: /artifact
   deploy:
