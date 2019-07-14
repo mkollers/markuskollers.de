@@ -15,6 +15,7 @@ export class AppComponent {
     private _sanitizer: DomSanitizer
   ) {
     this.registerIcons('social', ['mail', 'twitter', 'github', 'linkedin', 'xing']);
+    this.registerIcons('material', ['menu']);
   }
 
   /** Registers one icon for a namespace. Requires the svg to be under "assets/icons/${namespace}/${name}.svg" */

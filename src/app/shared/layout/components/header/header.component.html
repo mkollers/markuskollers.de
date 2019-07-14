@@ -3,8 +3,17 @@
     <span>> $ cd /{{ path$ | async }}/</span>
     <span class="logo-cursor"></span>
   </section>
+  <button id="menu-button" mat-button [matMenuTriggerFor]="menu">
+    Menü
+    <mat-icon svgIcon="material:menu"></mat-icon>
+  </button>
   <nav>
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Über mich</a>
     <a routerLink="/blog" routerLinkActive="active">Blog</a>
   </nav>
 </section>
+
+<mat-menu #menu="matMenu">
+  <a mat-menu-item routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Über mich</a>
+  <a mat-menu-item routerLink="/blog" routerLinkActive="active">Blog</a>
+</mat-menu>
