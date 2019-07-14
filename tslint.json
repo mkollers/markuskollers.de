@@ -12,14 +12,14 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "mk",
       "camelCase"
     ],
     "eofline": true,
     "component-selector": [
       true,
       "element",
-      "app",
+      "mk",
       "kebab-case"
     ],
     "import-blacklist": [

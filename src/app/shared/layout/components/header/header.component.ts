@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { map, filter, tap, mergeMap, switchMap } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-header',
+  selector: 'mk-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

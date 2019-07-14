@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-blog-page',
+  selector: 'mk-blog-page',
   templateUrl: './blog-page.component.html',
   styleUrls: ['./blog-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

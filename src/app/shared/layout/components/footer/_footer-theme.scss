@@ -5,7 +5,7 @@
   $accent: map-get($theme, accent);
   $foreground: map-get($theme, foreground);
 
-  app-footer nav a {
+  mk-footer nav a {
     border-bottom: 1px solid transparent;
     color: mat-color($foreground, text, .87);
 

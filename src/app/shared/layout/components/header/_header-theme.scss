@@ -5,15 +5,15 @@
   $accent: map-get($theme, accent);
   $foreground: map-get($theme, foreground);
 
-  app-header nav a {
+  mk-header nav a {
     color: mat-color($foreground, text, .87);
     border-bottom: 1px solid transparent;
-  }
 
-  app-header nav a:hover,
-  app-header nav a.active {
-    color: mat-color($primary, 500);
-    border-bottom: 1px solid mat-color($primary, 500);
+    &:hover,
+    &.active {
+      color: mat-color($primary, 500);
+      border-bottom: 1px solid mat-color($primary, 500);
+    }
   }
 
   @keyframes cursor {
