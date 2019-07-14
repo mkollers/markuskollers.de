@@ -23,8 +23,6 @@ jobs:
           command: npm test
       - store_test_results:
           path: ~/project/test-results
-      - run: |
-          cat app.yaml | echo
       # Cache the dist folder for the deploy job- 
       - save_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
@@ -39,10 +37,6 @@ jobs:
     steps:
       - restore_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
-      - run: |
-          cat app.yaml | echo
-      - run: |
-          cat .gcloudignore | echo
       - run:
           name: Deploy to GCP
           command: gcloud app deploy app.yaml --project markuskollers-de --quiet
