@@ -12,7 +12,7 @@
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod --no-progress && ng run markuskollers-de:server:production --bundleDependencies all --no-progress",
-    "deploy": "gcloud app deploy app.yaml --project markuskollers-de"
+    "deploy": "gcloud app deploy app.yaml --project markuskollers-de --quiet"
   },
   "private": true,
   "dependencies": {
