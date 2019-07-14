@@ -15,10 +15,10 @@ jobs:
           paths:
             - "node_modules"
       - run:
-          name: angular-build
+          name: Build server and client bundles
           command: npm run build:client-and-server-bundles
       - run:
-          name: angular-test
+          name: Run tests
           command: npm test
       - store_artifacts:
           path: coverage/TESTS.xml
