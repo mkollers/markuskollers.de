@@ -23,12 +23,6 @@ jobs:
       - store_artifacts:
           path: coverage/TESTS.xml
           prefix: tests
-#      - run:
-#          name: angular-lint
-#          command: npm run lint -- --formatters-dir ./tslint-formatters --format junit -o tslint.xml
-#      - store_artifacts:
-#          path: tslint.xml
-#          prefix: lint
   deploy:
     docker:
       - image: google/cloud-sdk
@@ -37,6 +31,9 @@ jobs:
           echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
           gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
+      - run:
+        name: Deploy to GCP
+        command: npm run deploy
 workflows:
   version: 2
   build-and-deploy:
