@@ -25,7 +25,7 @@ jobs:
           path: ~/project/test-results
       # Cache the dist folder for the deploy job- 
       - save_cache:
-          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}
+          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - ".gcloudignore"
             - "app.yaml"
@@ -36,7 +36,7 @@ jobs:
     working_directory: ~/project
     steps:
       - restore_cache:
-          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}
+          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
       - run: |
           echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
