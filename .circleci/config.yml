@@ -22,7 +22,6 @@ jobs:
           command: npm test
       - store_test_results:
           path: coverage/TESTS.xml
-          prefix: tests
   deploy:
     docker:
       - image: google/cloud-sdk
