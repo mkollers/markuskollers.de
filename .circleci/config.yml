@@ -21,7 +21,7 @@ jobs:
           name: Run tests
           command: npm test
       - store_test_results:
-          path: coverage/TESTS.xml
+          path: test-results/TESTS.xml
   deploy:
     docker:
       - image: google/cloud-sdk
