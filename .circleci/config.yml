@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Run tests
           command: npm test
-      - store_artifacts:
+      - store_test_results:
           path: coverage/TESTS.xml
           prefix: tests
   deploy:
@@ -33,7 +33,7 @@ jobs:
           gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
       - run:
           name: Deploy to GCP
-          command: npm run deploy
+          command: gcloud app deploy app.yaml --project markuskollers-de --quiet
 workflows:
   version: 2
   build-and-deploy:
