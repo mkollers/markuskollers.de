@@ -22,6 +22,11 @@ jobs:
           command: npm test
       - store_test_results:
           path: coverage/TESTS.xml
+      - run:
+          name: Prepare artifact
+          command: cp app.yaml /artifact && cp dist/** /artifact/dist
+      - store_artifacts:
+          path: /artifact
   deploy:
     docker:
       - image: google/cloud-sdk
