@@ -42,7 +42,7 @@ jobs:
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
       - run:
           name: Deploy to GCP
-          command: gcloud app deploy app.yaml --project markuskollers-de --quiet
+          command: gcloud app deploy /home/circleci/project/app.yaml --project markuskollers-de --quiet
 workflows:
   version: 2
   build-and-deploy:
