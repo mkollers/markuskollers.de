@@ -1,4 +1,4 @@
-* CI Build
+* CI Deployment
 * Mobile optimization (Menu)
 * Ease in animation
 * Social Media sharing 

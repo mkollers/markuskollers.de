@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "node --max_old_space_size=4096 dist/server",
     "build": "ng build --prod",
-    "test": "ng test",
+    "test": "ng test --code-coverage --watch false",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
@@ -32,6 +32,7 @@
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
     "compression": "^1.7.4",
     "express": "^4.17.1",
+    "puppeteer": "^1.18.1",
     "rxjs": "~6.5.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
