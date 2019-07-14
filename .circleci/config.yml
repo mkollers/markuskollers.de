@@ -20,9 +20,9 @@ jobs:
       - run:
           name: angular-test
           command: npm test
-#      - store_artifacts:
-#          path: test-results.xml
-#          prefix: tests
+      - store_artifacts:
+          path: TESTS.xml
+          prefix: tests
 #      - run:
 #          name: angular-lint
 #          command: npm run lint -- --formatters-dir ./tslint-formatters --format junit -o tslint.xml
