@@ -21,7 +21,7 @@ jobs:
           name: angular-test
           command: npm test
       - store_artifacts:
-          path: TESTS.xml
+          path: coverage/TESTS.xml
           prefix: tests
 #      - run:
 #          name: angular-lint
