@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:10-browsers
+    working_directory: ~/project
     steps:
       - checkout
       - restore_cache:
@@ -22,10 +23,10 @@ jobs:
           command: npm test
       - store_test_results:
           path: ~/project/test-results
-       # Cache the dist folder for the deploy job- 
-      - persist_to_workspace:  
-          root: ~/project  
-          paths:        
+      # Cache the dist folder for the deploy job- 
+      - save_cache:
+          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
             - app.yaml
             - dist
   deploy:
@@ -33,6 +34,8 @@ jobs:
       - image: google/cloud-sdk
     working_directory: ~/project
     steps:
+      - restore_cache:
+          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
       - run: |
           cat app.yaml | echo
       - run:
