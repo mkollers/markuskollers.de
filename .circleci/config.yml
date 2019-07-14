@@ -24,13 +24,14 @@ jobs:
           path: coverage/TESTS.xml
       - run:
           name: Prepare artifact
-          command: mkdir artifact && mkdir artifact/dist && cp app.yaml artifact && cp -R dist artifact
+          command: mkdir artifact && mkdir artifact/dist && cp app.yaml artifact && cp -R dist/** artifact
       - store_artifacts:
           path: artifact
   deploy:
     docker:
       - image: google/cloud-sdk
     steps:
+      - checkout
       - run: |
           echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
