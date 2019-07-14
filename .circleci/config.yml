@@ -24,6 +24,7 @@ jobs:
           path: ~/test-results
        # Cache the dist folder for the deploy job- 
       - persist_to_workspace:  
+          root: ~/project  
           paths:        
             - app.yaml
             - dist
