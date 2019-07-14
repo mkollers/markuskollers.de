@@ -24,9 +24,9 @@ jobs:
           path: coverage/TESTS.xml
       - run:
           name: Prepare artifact
-          command: mkdir artifact && cp app.yaml artifact && cp dist artifact
+          command: mkdir artifact && mkdir artifact/dist && cp app.yaml artifact && cp -R dist artifact
       - store_artifacts:
-          path: /artifact
+          path: artifact
   deploy:
     docker:
       - image: google/cloud-sdk
