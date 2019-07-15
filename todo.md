@@ -1,8 +1,6 @@
-* Social Media sharing 
 * Cross Browser Tests
-* Add analytics
+* Circle CI Code Coverage
 * Unit Tests
-* Unit Tests CI
 * Large about text
 * Skills
 * Portfolio

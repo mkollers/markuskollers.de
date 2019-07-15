@@ -3,6 +3,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
 
+import { AnalyticsService } from './shared/helper/services/analytics.service';
 import { easeInAnimation } from './shared/layout/animations/ease-in.animation';
 
 @Component({
@@ -16,7 +17,8 @@ export class AppComponent {
 
   constructor(
     private _iconRegistry: MatIconRegistry,
-    private _sanitizer: DomSanitizer
+    private _sanitizer: DomSanitizer,
+    analytics: AnalyticsService
   ) {
     this.registerIcons('social', ['mail', 'twitter', 'github', 'linkedin', 'xing']);
     this.registerIcons('material', ['menu']);
