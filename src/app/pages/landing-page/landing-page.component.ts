@@ -11,7 +11,7 @@ export class LandingPageComponent {
 
   constructor(meta: Meta) {
     // tslint:disable-next-line:max-line-length
-    meta.updateTag({ name: 'description', content: 'Ich entwickel cloud-native Software, meistens Web-basiert, lerne gerne neue Technologien und realisiere innovative Projekte' });
+    meta.updateTag({ name: 'description', content: 'Ich entwickle cloud-native Software, meistens Web-basiert, lerne gerne neue Technologien und realisiere innovative Projekte' });
   }
 
 }
