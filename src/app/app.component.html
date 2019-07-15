@@ -1,4 +1,5 @@
 <mk-header></mk-header>
-<router-outlet></router-outlet>
-<mk-footer></mk-footer>
-
+<main id="content" [@easeInAnimation]="getState(o)">
+  <router-outlet #o="outlet"></router-outlet>
+</main>
+<footer mk-footer></footer>
