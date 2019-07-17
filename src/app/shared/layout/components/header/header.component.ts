@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, HostBinding, HostListener } from '@angular/core';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { map, filter, tap, mergeMap, switchMap } from 'rxjs/operators';
+import { filter, map, switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'mk-header',

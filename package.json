@@ -12,7 +12,8 @@
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod --no-progress && ng run markuskollers-de:server:production --bundleDependencies all --no-progress",
-    "deploy": "gcloud app deploy app.yaml --project markuskollers-de"
+    "deploy": "gcloud app deploy app.yaml --project markuskollers-de",
+    "bundle-report": "ng build --prod --stats-json && webpack-bundle-analyzer dist/browser/stats.json"
   },
   "private": true,
   "dependencies": {
@@ -61,6 +62,7 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.4.5",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.6"
   }
 }
