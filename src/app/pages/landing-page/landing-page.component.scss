@@ -13,12 +13,19 @@
 }
 
 p {
-  text-align: center;
+  text-align: justify;
   max-width: 600px;
 }
 
-#social a {
-  margin: 0 8px;
+#social {
+  margin-bottom: 32px;
 
-  transition: color .3s ease-in-out;
+  a {
+    margin: 0 8px;
+    transition: color .3s ease-in-out;
+  }
+}
+
+h2 {
+  margin-bottom: 0;
 }
