@@ -79,7 +79,18 @@ $warn: mat-palette($mat-red);
 // Create the theme object (a Sass map containing all of the palettes).
 $theme: mat-light-theme($primary, $accent, $warn);
 
+$primary: map-get($theme, primary);
+
 body {
   margin: 0;
   font-family: Raleway, "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: mat-color($primary, 500);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

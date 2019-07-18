@@ -2,22 +2,29 @@
   align-items: center;
 }
 
+.content {
+  align-items: center;
+  max-width: 600px;
+}
+
 #avatar {
-  max-width: 450px;
+  max-width: 334px;
   width: 80%;
 }
 
 #avatar img {
+  display: block;
   height: auto;
-  width: 100%;
+  margin: 0 auto;
 }
 
 p {
   text-align: justify;
-  max-width: 600px;
 }
 
 #social {
+  display: flex;
+  justify-content: center;
   margin-bottom: 32px;
 
   a {
@@ -26,6 +33,16 @@ p {
   }
 }
 
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 h2 {
   margin-bottom: 0;
+}
+
+.image-right {
+  float: right;
+  margin: 0 16px 16px 16px;
 }
