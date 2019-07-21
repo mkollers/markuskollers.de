@@ -15,7 +15,8 @@
 @include angular-material-theme($theme);
 @include custom-theme($theme);
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 400;
   text-transform: uppercase;
   word-break: break-all;
@@ -23,4 +24,10 @@ h1, h2 {
 
 p {
   line-height: 1.5;
+}
+
+mk-root .mat-flat-button {
+  border-radius: 1000px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
