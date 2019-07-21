@@ -23,6 +23,8 @@ jobs:
           command: npm test
       - store_test_results:
           path: ~/project/test-results
+      - store_artifacts: # upload test coverage as artifact
+          path: ~/project/coverage/markuskollers-de/lcov.info
       # Cache the dist folder for the deploy job- 
       - save_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
