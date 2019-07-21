@@ -2,6 +2,6 @@
 * Unit Tests
 * Integration Tests
 * Automated Cross Browser Tests
-* Large about text
-* Skills
+* Skills / Vita
 * Portfolio
+* Blog
