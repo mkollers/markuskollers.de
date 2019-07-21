@@ -22,7 +22,7 @@ h2 {
   word-break: break-all;
 }
 
-p {
+p, ul {
   line-height: 1.5;
 }
 
@@ -30,4 +30,14 @@ mk-root .mat-flat-button {
   border-radius: 1000px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.quote, .autor {
+  display: block;
+  font-style: italic;
+  text-align: center;
+}
+
+.autor {
+  font-size: 0.75rem;
 }
