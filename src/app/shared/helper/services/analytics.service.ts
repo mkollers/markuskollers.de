@@ -24,8 +24,7 @@ export class AnalyticsService {
       filter(event => event instanceof NavigationEnd),
       filter(() => isPlatformBrowser(this.platformId)),
       tap((event: NavigationEnd) => ga('set', 'page', event.urlAfterRedirects)),
-      tap(() => ga('send', 'pageview')),
-      tap(() => console.log(42))
+      tap(() => ga('send', 'pageview'))
     ).subscribe();
   }
 
