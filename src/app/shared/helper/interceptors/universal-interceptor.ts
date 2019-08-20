@@ -1,7 +1,7 @@
-import { Injectable, Inject, Optional } from '@angular/core';
-import { HttpInterceptor, HttpHandler, HttpRequest, HttpHeaders } from '@angular/common/http';
-import { Request } from 'express';
+import { HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { Inject, Injectable, Optional } from '@angular/core';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
+import { Request } from 'express';
 
 @Injectable()
 export class UniversalInterceptor implements HttpInterceptor {
