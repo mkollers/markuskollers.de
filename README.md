@@ -1,4 +1,5 @@
 # Homepage of Markus Kollers
+[![CircleCI](https://circleci.com/gh/mkollers/markuskollers.de/tree/master.svg?style=svg)](https://circleci.com/gh/mkollers/markuskollers.de/tree/master)
 
 ## Prerequirements
 To run the application, install Node.js (>=10) https://nodejs.org/en/download/
