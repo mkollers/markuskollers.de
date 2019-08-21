@@ -1,4 +1,3 @@
-* Circle CI Code Coverage
 * Unit Tests
 * Integration Tests
 * Add sitemap
