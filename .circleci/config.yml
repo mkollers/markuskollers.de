@@ -30,9 +30,12 @@ jobs:
       - store_test_results:
           path: ~/project/test-results
       - run:
-          name: Code Climate Test Coverage
+          name: Prepare Code Climate Test Coverage
           command: |
-            ./cc-test-reporter format-coverage -t lcov -o "./coverage/markuskollers-de/lcov.info"
+            ./cc-test-reporter format-coverage -t lcov ./coverage/markuskollers-de/lcov.info
+      - run: 
+          name: Upload Code Climate Test Coverage 
+          command: ./cc-test-reporter upload-coverage
       # Cache the dist folder for the deploy job- 
       - save_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
