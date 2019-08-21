@@ -6,11 +6,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./imprint-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ImprintPageComponent implements OnInit {
+export class ImprintPageComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

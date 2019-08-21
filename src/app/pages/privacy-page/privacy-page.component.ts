@@ -6,11 +6,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./privacy-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PrivacyPageComponent implements OnInit {
+export class PrivacyPageComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }
