@@ -30,7 +30,7 @@ jobs:
       - store_test_results:
           path: ~/project/test-results
       - run:
-         name: Code Climate Test Coverage
+          name: Code Climate Test Coverage
           command: |
             ./cc-test-reporter format-coverage -t lcov -o "~/project/coverage/markuskollers-de/lcov.info"
       # Cache the dist folder for the deploy job- 
