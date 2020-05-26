@@ -6,9 +6,9 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "experimentalDecorators": true,    
     "importHelpers": true,
     "target": "es2015",
     "typeRoots": [
@@ -17,6 +17,16 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@shared*": ["src/app/shared*"],
+      "@pages/*": ["src/app/pages/*"],
+      "@mocks/*": ["src/mocks/*"],
+      "@environments/*": ["src/environments/*"]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
   }
 }
