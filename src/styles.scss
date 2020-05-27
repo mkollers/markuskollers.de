@@ -22,7 +22,13 @@ h2 {
   word-break: break-all;
 }
 
-p, ul {
+h2+h3 {
+  font-weight: 400;
+  margin-top: -16px;
+}
+
+p,
+ul {
   line-height: 1.5;
 }
 
@@ -32,7 +38,8 @@ mk-root .mat-flat-button {
   text-transform: uppercase;
 }
 
-.quote, .autor {
+.quote,
+.autor {
   display: block;
   font-style: italic;
   text-align: center;

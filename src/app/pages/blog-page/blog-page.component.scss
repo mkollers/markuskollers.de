@@ -1,0 +1,23 @@
+:host {
+  display: grid;
+}
+
+.date {
+  font-size: .875rem;
+  justify-self: end;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: .25rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+p:not(.quote) {
+  text-align: justify;
+}

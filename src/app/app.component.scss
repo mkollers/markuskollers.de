@@ -9,15 +9,16 @@
 }
 
 #content {
+  display: grid;
   margin-top: 86px;
   min-height: calc(100vH - 86px - 102px);
 }
 
 :host ::ng-deep router-outlet+* {
-  display: flex;
-  flex-direction: column;
+  justify-self: center;
+  max-width: 40rem;
 }
 
 .mk-footer {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
