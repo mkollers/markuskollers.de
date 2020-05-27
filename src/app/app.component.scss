@@ -10,13 +10,13 @@
 
 #content {
   display: grid;
-  margin-top: 86px;
+  margin: 86px auto 0 auto;
+  max-width: 40rem;
   min-height: calc(100vH - 86px - 102px);
 }
 
 :host ::ng-deep router-outlet+* {
   justify-self: center;
-  max-width: 40rem;
 }
 
 .mk-footer {
