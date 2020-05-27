@@ -4,5 +4,4 @@
 * Automated Cross Browser Tests
 * Skills / Vita
 * Portfolio
-* Blog
 * CDN
