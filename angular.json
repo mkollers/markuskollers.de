@@ -49,7 +49,7 @@
                 "replace": "src/environments/environment.ts",
                 "with": "src/environments/environment.prod.ts"
               }],
-              "baseHref": "https://markuskollers.de/",
+              "baseHref": "https://www.markuskollers.de/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
