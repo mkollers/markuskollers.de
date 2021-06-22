@@ -72,15 +72,17 @@ nav a {
   transition: all .3s ease-in-out;
 }
 
-@media #{$mat-lt-md} {
+#menu-button { 
+  display: none;
+}
+
+@media screen and (max-width: $mat-md) {
   nav {
     display: none;
   }
-}
 
-@media #{$mat-gt-sm} {
   #menu-button {
-    display: none;
+    display: block;
   }
 }
 
