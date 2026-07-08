@@ -49,3 +49,9 @@ Thumbs.db
 # Claude Code – personal/local settings (not shared)
 .claude/settings.local.json
 CLAUDE.local.md
+
+# Astro / Node artefacts
+node_modules/
+dist/
+.astro/
+*.log

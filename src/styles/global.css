@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/fraunces';
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
+
+@theme {
+  --font-display: 'Fraunces Variable', Georgia, serif;
+  --font-sans: 'Geist Variable', system-ui, sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, monospace;
+
+  /*
+   * Farb-Tokens verweisen auf CSS-Variablen (siehe :root / prefers-color-scheme
+   * unten), damit ein einziger Wert-Swap Light/Dark umschaltet. Trade-off:
+   * Tailwind kann so die Farbkanaele nicht zerlegen -> Opacity-Modifier wie
+   * `text-accent/50` wirken NICHT. Bei Bedarf in Iteration 1 (Theme-Toggle)
+   * auf Kanal-Tokens oder eine .dark-Variante umstellen.
+   */
+  --color-bg: var(--bg);
+  --color-ink: var(--ink);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+}
+
+:root {
+  --bg: #faf8f4;
+  --ink: #1a1714;
+  --accent: #ea6a12;
+  --accent-text: #b5470b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15120e;
+    --ink: #f5f2ec;
+    --accent: #fb923c;
+    --accent-text: #fdba74;
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
