@@ -3,6 +3,13 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://markuskollers.de',
+  i18n: {
+    locales: ['de', 'en'],
+    defaultLocale: 'de',
+    routing: {
+      prefixDefaultLocale: false
+    }
+  },
   vite: {
     plugins: [tailwindcss()]
   }
