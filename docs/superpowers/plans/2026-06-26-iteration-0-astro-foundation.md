@@ -6,14 +6,14 @@
 
 **Architecture:** Astro im Static-Site-Generation-Modus (kein Adapter, statisches `dist/`). Tailwind v4 über das Vite-Plugin (CSS-first, kein `tailwind.config.js`). Fonts via Fontsource selbst gehostet. i18n über Astros natives Routing (`/` = de ohne Prefix, `/en/`). Content Collections über die Astro-5-Content-Layer-API (`glob()`/`file()`-Loader + Zod-Schemas) als Single Source of Truth. Kein Client-seitiges Framework-JS.
 
-**Tech Stack:** Astro 5, TypeScript (strict), Tailwind CSS v4 (`@tailwindcss/vite`), Fontsource (Fraunces / Geist / Geist Mono), Vitest (Unit-Tests für reine Helfer), Prettier (`prettier-plugin-astro`), `@astrojs/sitemap`, Netlify (statisch).
+**Tech Stack:** Astro (aktueller Major, v7 zum Umsetzungszeitpunkt), TypeScript (strict), Tailwind CSS v4 (`@tailwindcss/vite`), Fontsource (Fraunces / Geist / Geist Mono), Vitest (Unit-Tests für reine Helfer), Prettier (`prettier-plugin-astro`), `@astrojs/sitemap`, Netlify (statisch).
 
 ## Global Constraints
 
 Diese gelten implizit für **jede** Task:
 
 - **Node ≥ 20** (lokal und auf Netlify; via `.nvmrc` + `netlify.toml`).
-- **Astro 5**, **Tailwind v4** — CSS-first-Konfiguration, **kein** `tailwind.config.js`, **nicht** die alte `@astrojs/tailwind`-Integration.
+- **Astro (aktueller Major, via `npm install astro`)** — zum Umsetzungszeitpunkt Astro 7. Content-Layer-API (`glob`/`file`-Loader) und i18n-Config (`prefixDefaultLocale`) sind seit Astro 5 stabil und in v7 unverändert. **Tailwind v4** — CSS-first-Konfiguration, **kein** `tailwind.config.js`, **nicht** die alte `@astrojs/tailwind`-Integration.
 - **TypeScript strict** (`astro/tsconfigs/strict`).
 - **Fonts selbst gehostet** über Fontsource — **kein** Google-Fonts-CDN, kein externer Font-Request.
 - **Kein Client-Framework-JS** — keine React/Vue/Svelte-Islands in Iteration 0.
@@ -508,9 +508,16 @@ git commit -m "feat: add DE/EN i18n routing and translation helper"
 
 - [ ] **Step 1: `src/content.config.ts` mit Schemas anlegen**
 
+> **Zod-Import (Astro 7):** `z` **nicht** aus `astro:content` importieren — dort
+> ist der Re-Export in Astro 7 (Zod v4) als deprecated markiert (löst `ts6385`-Hints
+> aus). Stattdessen `zod` als eigene Dependency deklarieren (Version passend zu
+> Astros `^4.3.6`, damit npm auf eine Instanz dedupliziert) und `z` direkt daraus
+> importieren.
+
 ```ts
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 import { glob, file } from 'astro/loaders';
+import { z } from 'zod';
 
 const cv = defineCollection({
   loader: glob({ pattern: '**/[^_]*.md', base: './src/content/cv' }),
@@ -530,7 +537,7 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     tagline: z.string(),
-    url: z.string().url().optional(),
+    url: z.url().optional(),
     problem: z.string(),
     solution: z.string(),
     result: z.string(),
@@ -726,11 +733,18 @@ Expected: installiert ohne Fehler.
 
 - [ ] **Step 7: `.prettierignore` anlegen**
 
+`docs/`, `.superpowers/` und `.claude/` bewusst ausschließen, damit
+`npm run format` nur den Quellcode normalisiert und nicht die Spec/den Plan,
+das SDD-Ledger oder die Tooling-Config umformatiert.
+
 ```
 dist/
 .astro/
 node_modules/
 package-lock.json
+docs/
+.superpowers/
+.claude/
 ```
 
 - [ ] **Step 8: `lint`/`format`-Scripts in `package.json` ergänzen**
