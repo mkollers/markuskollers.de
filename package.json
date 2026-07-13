@@ -13,9 +13,9 @@
     "lint": "prettier --check . && astro check"
   },
   "dependencies": {
-    "@fontsource-variable/fraunces": "^5.2.9",
-    "@fontsource-variable/geist": "^5.2.9",
-    "@fontsource-variable/geist-mono": "^5.2.8",
+    "@fontsource-variable/ibm-plex-sans": "^5.2.8",
+    "@fontsource-variable/space-grotesk": "^5.2.10",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
     "@tailwindcss/vite": "^4.3.2",
     "astro": "^7.0.6",
     "tailwindcss": "^4.3.2"

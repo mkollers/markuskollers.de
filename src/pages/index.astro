@@ -1,14 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { useTranslations } from '../i18n/utils';
-
-const t = useTranslations('de');
+import Hero from '../components/Hero.astro';
+import Results from '../components/Results.astro';
 ---
 
-<BaseLayout title="Markus Kollers" lang="de" description="Lebendiger Lebenslauf von Markus Kollers.">
-  <main class="mx-auto max-w-2xl px-6 py-24">
-    <h1 class="font-display text-4xl">Markus Kollers</h1>
-    <p class="mt-4 font-mono text-accent-text">{t('hero.tagline')}</p>
-    <p class="mt-8"><a class="text-accent-text underline" href="/en/">English</a></p>
+<BaseLayout
+  title="Markus Kollers — Produkt & Engineering"
+  lang="de"
+  description="Markus Kollers: Produkt und Engineering in einer Person. Ich baue digitale Produkte vom Konzept bis in den laufenden Betrieb."
+>
+  <main>
+    <Hero lang="de" />
+    <Results lang="de" />
   </main>
 </BaseLayout>
