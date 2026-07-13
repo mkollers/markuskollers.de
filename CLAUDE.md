@@ -31,7 +31,7 @@ Personal homepage (markuskollers.de) — a static Astro site as a „living CV".
 
 ## Deploy
 
-Netlify, static (`netlify.toml`: `npm run build` → `dist`, Node 20). Deploy on Git push.
+Netlify, static (`netlify.toml`: `npm run build` → `dist`, Node 22 — Astro 7 requires >=22.12). Deploy on Git push.
 
 ## Roadmap
 
