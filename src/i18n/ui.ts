@@ -7,9 +7,43 @@ export const defaultLang = 'de';
 
 export const ui = {
   de: {
-    'hero.tagline': 'Relaunch in Arbeit.'
+    'hero.eyebrow': '10+ Jahre · vom Engineer zum Gründer',
+    'hero.name': 'Markus Kollers',
+    'hero.keywords': 'Produkt und Engineering in einer Person.',
+    'hero.tagline':
+      'Ich baue digitale Produkte, komplett: vom Konzept bis in den laufenden Betrieb. Am liebsten da, wo ich das Produkt mitgestalte und nicht bloß fertige Vorgaben umsetze.',
+    'hero.ctaContact': 'Kontakt aufnehmen',
+    'hero.ctaLinkedin': 'LinkedIn',
+    'hero.portraitAlt': 'Portrait von Markus Kollers',
+    'hero.availability': 'Verfügbar für neue Projekte · Frankfurt & Remote',
+    'results.label': 'Auf einen Blick',
+    'results.1.title': 'Produkt & Business Case',
+    'results.1.desc': 'Erste Frage: Was soll das Produkt bringen, und wer zahlt dafür? Dann Code.',
+    'results.2.title': 'Architektur & Cloud',
+    'results.2.desc': 'Cloud-native auf Kubernetes. CI/CD und Monitoring sind bei mir Standard, kein Extra.',
+    'results.3.title': 'Hands-on Full-Stack',
+    'results.3.desc': 'Frontend, Backend, Infrastruktur. Ich bleibe technisch drin und treffe die Architekturentscheidungen selbst.',
+    'results.4.title': 'Agentic Engineering',
+    'results.4.desc': 'Die Umsetzung läuft über mehrere KI-Agenten parallel. Das gibt mir den Output eines Teams, auch wenn ich solo baue.'
   },
   en: {
-    'hero.tagline': 'Relaunch in progress.'
+    'hero.eyebrow': '10+ years · from engineer to founder',
+    'hero.name': 'Markus Kollers',
+    'hero.keywords': 'Product and engineering in one person.',
+    'hero.tagline':
+      "I build digital products end to end, from concept to running in production. I do my best work when I'm shaping the product, not handed a finished spec.",
+    'hero.ctaContact': 'Get in touch',
+    'hero.ctaLinkedin': 'LinkedIn',
+    'hero.portraitAlt': 'Portrait of Markus Kollers',
+    'hero.availability': 'Available for new projects · Frankfurt & remote',
+    'results.label': 'At a glance',
+    'results.1.title': 'Product & business case',
+    'results.1.desc': 'First question: what should the product do, and who pays for it? Then code.',
+    'results.2.title': 'Architecture & cloud',
+    'results.2.desc': 'Cloud-native on Kubernetes. CI/CD and monitoring are standard with me, not an add-on.',
+    'results.3.title': 'Hands-on full-stack',
+    'results.3.desc': 'Frontend, backend, infrastructure. I stay technical and make the architecture calls myself.',
+    'results.4.title': 'Agentic engineering',
+    'results.4.desc': "The build runs across several AI agents in parallel. That gives me a team's output, even when I build solo."
   }
 } as const;

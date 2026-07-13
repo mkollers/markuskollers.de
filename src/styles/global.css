@@ -1,40 +1,40 @@
 @import 'tailwindcss';
-@import '@fontsource-variable/fraunces';
-@import '@fontsource-variable/geist';
-@import '@fontsource-variable/geist-mono';
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource-variable/ibm-plex-sans';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
 
 @theme {
-  --font-display: 'Fraunces Variable', Georgia, serif;
-  --font-sans: 'Geist Variable', system-ui, sans-serif;
-  --font-mono: 'Geist Mono Variable', ui-monospace, monospace;
+  --font-display: 'Space Grotesk Variable', system-ui, sans-serif;
+  --font-sans: 'IBM Plex Sans Variable', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 
   /*
-   * Farb-Tokens verweisen auf CSS-Variablen (siehe :root / prefers-color-scheme
-   * unten), damit ein einziger Wert-Swap Light/Dark umschaltet. Trade-off:
-   * Tailwind kann so die Farbkanaele nicht zerlegen -> Opacity-Modifier wie
-   * `text-accent/50` wirken NICHT. Bei Bedarf in Iteration 1 (Theme-Toggle)
-   * auf Kanal-Tokens oder eine .dark-Variante umstellen.
+   * Farb-Tokens verweisen auf CSS-Variablen (:root). Aktuell Light-only,
+   * angelehnt an das Mockup-Design; Dark-Mode/Theme-Toggle folgt spaeter.
+   * Hinweis: da die Tokens var()-Referenzen sind, zerlegt Tailwind die
+   * Farbkanaele nicht -> Opacity-Modifier (`text-accent/50`) wirken NICHT.
    */
   --color-bg: var(--bg);
   --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-text: var(--accent-text);
+  --color-accent-soft: var(--accent-soft);
+  --color-success: var(--success);
 }
 
 :root {
-  --bg: #faf8f4;
-  --ink: #1a1714;
-  --accent: #ea6a12;
-  --accent-text: #b5470b;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #15120e;
-    --ink: #f5f2ec;
-    --accent: #fb923c;
-    --accent-text: #fdba74;
-  }
+  color-scheme: light;
+  --bg: #f7f6f2;
+  --ink: #16181c;
+  --muted: #5c6069;
+  --border: #e4e2db;
+  --accent: #4338ca;
+  --accent-text: #4338ca;
+  --accent-soft: #eaeffb;
+  --success: #16a34a;
 }
 
 @layer base {

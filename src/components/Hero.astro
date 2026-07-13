@@ -1,0 +1,105 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/markus-portrait.png';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'de' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section class="mx-auto max-w-5xl px-6 pt-6 pb-16 md:pb-24">
+  <div class="flex justify-end">
+    <nav class="flex items-center gap-2 font-mono text-xs uppercase tracking-wider" aria-label="Sprache">
+      {
+        lang === 'de' ? (
+          <span class="font-medium text-accent-text" aria-current="true">
+            DE
+          </span>
+        ) : (
+          <a href="/" class="text-muted transition hover:text-ink">
+            DE
+          </a>
+        )
+      }
+      <span aria-hidden="true" class="text-muted">/</span>
+      {
+        lang === 'en' ? (
+          <span class="font-medium text-accent-text" aria-current="true">
+            EN
+          </span>
+        ) : (
+          <a href="/en/" class="text-muted transition hover:text-ink">
+            EN
+          </a>
+        )
+      }
+    </nav>
+  </div>
+
+  <div class="mt-8 grid items-center gap-10 md:mt-10 md:grid-cols-[1.7fr_1fr] md:gap-14">
+    <div>
+      <p class="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-accent-text">
+        <span aria-hidden="true" class="h-px w-6 bg-accent"></span>
+        {t('hero.eyebrow')}
+      </p>
+      <h1 class="mt-5 font-display text-6xl font-light leading-[1.0] tracking-tight text-balance md:text-7xl">
+        {t('hero.name')}
+      </h1>
+      <p class="mt-5 font-display text-xl font-medium leading-snug text-accent-text md:text-2xl">
+        {t('hero.keywords')}
+      </p>
+      <p class="mt-5 max-w-prose text-lg leading-relaxed text-muted">{t('hero.tagline')}</p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a
+          href="mailto:mail@markuskollers.de"
+          class="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90"
+        >
+          {t('hero.ctaContact')}
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="size-[1.05em] transition-transform group-hover:translate-x-0.5"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m13 6 6 6-6 6"></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/markus-kollers"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-medium text-ink transition hover:border-accent"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" class="size-[1.1em]" aria-hidden="true">
+            <path
+              d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"
+            ></path>
+          </svg>
+          {t('hero.ctaLinkedin')}
+        </a>
+      </div>
+      <p class="mt-6 flex items-center gap-2 font-mono text-xs text-muted">
+        <span aria-hidden="true" class="size-2 rounded-full bg-success"></span>
+        {t('hero.availability')}
+      </p>
+    </div>
+    <div class="order-first justify-self-center md:order-none md:justify-self-end">
+      <Image
+        src={portrait}
+        alt={t('hero.portraitAlt')}
+        widths={[288, 432, 576]}
+        sizes="(min-width: 768px) 18rem, 14rem"
+        class="w-56 md:w-72"
+      />
+    </div>
+  </div>
+</section>

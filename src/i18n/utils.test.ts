@@ -14,11 +14,11 @@ describe('getLangFromUrl', () => {
 describe('useTranslations', () => {
   it('translates a known key for en', () => {
     const t = useTranslations('en');
-    expect(t('hero.tagline')).toBe('Relaunch in progress.');
+    expect(t('hero.ctaContact')).toBe('Get in touch');
   });
 
   it('translates a known key for de', () => {
     const t = useTranslations('de');
-    expect(t('hero.tagline')).toBe('Relaunch in Arbeit.');
+    expect(t('hero.ctaContact')).toBe('Kontakt aufnehmen');
   });
 });
