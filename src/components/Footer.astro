@@ -1,0 +1,23 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'de' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const imprintHref = lang === 'de' ? '/impressum' : '/en/imprint';
+const privacyHref = lang === 'de' ? '/datenschutz' : '/en/privacy';
+---
+
+<footer class="border-t border-border">
+  <div class="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-8 font-mono text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+    <span>© 2026 Markus Kollers</span>
+    <div class="flex items-center gap-4">
+      <a href={imprintHref} class="transition hover:text-ink">{t('footer.imprint')}</a>
+      <span aria-hidden="true">·</span>
+      <a href={privacyHref} class="transition hover:text-ink">{t('footer.privacy')}</a>
+    </div>
+  </div>
+</footer>

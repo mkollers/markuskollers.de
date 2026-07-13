@@ -24,7 +24,17 @@ export const ui = {
     'results.3.title': 'Hands-on Full-Stack',
     'results.3.desc': 'Frontend, Backend, Infrastruktur. Ich bleibe technisch drin und treffe die Architekturentscheidungen selbst.',
     'results.4.title': 'Agentic Engineering',
-    'results.4.desc': 'Die Umsetzung läuft über mehrere KI-Agenten parallel. Das gibt mir den Output eines Teams, auch wenn ich solo baue.'
+    'results.4.desc': 'Die Umsetzung läuft über mehrere KI-Agenten parallel. Das gibt mir den Output eines Teams, auch wenn ich solo baue.',
+    'nav.highlights': 'Schwerpunkte',
+    'nav.contact': 'Kontakt',
+    'contact.eyebrow': 'Kontakt',
+    'contact.lead': 'Neues Produkt im Kopf?',
+    'contact.leadAccent': 'Lass uns reden.',
+    'footer.imprint': 'Impressum',
+    'footer.privacy': 'Datenschutz',
+    'legal.imprintTitle': 'Impressum',
+    'legal.privacyTitle': 'Datenschutz',
+    'legal.back': 'Zurück zur Startseite'
   },
   en: {
     'hero.eyebrow': '10+ years · from engineer to founder',
@@ -44,6 +54,16 @@ export const ui = {
     'results.3.title': 'Hands-on full-stack',
     'results.3.desc': 'Frontend, backend, infrastructure. I stay technical and make the architecture calls myself.',
     'results.4.title': 'Agentic engineering',
-    'results.4.desc': "The build runs across several AI agents in parallel. That gives me a team's output, even when I build solo."
+    'results.4.desc': "The build runs across several AI agents in parallel. That gives me a team's output, even when I build solo.",
+    'nav.highlights': 'Focus',
+    'nav.contact': 'Contact',
+    'contact.eyebrow': 'Contact',
+    'contact.lead': 'Got a product in mind?',
+    'contact.leadAccent': "Let's talk.",
+    'footer.imprint': 'Imprint',
+    'footer.privacy': 'Privacy',
+    'legal.imprintTitle': 'Imprint',
+    'legal.privacyTitle': 'Privacy',
+    'legal.back': 'Back to home'
   }
 } as const;
