@@ -1,0 +1,48 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'de' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const home = lang === 'de' ? '/' : '/en/';
+---
+
+<header class="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 py-5">
+  <a href={home} class="flex items-center gap-2.5 font-display font-medium text-ink">
+    <span aria-hidden="true" class="grid size-8 place-items-center rounded-md bg-ink font-mono text-xs font-medium text-bg"> MK </span>
+    Markus Kollers
+  </a>
+  <nav class="flex items-center gap-5 font-mono text-xs uppercase tracking-wider" aria-label="Navigation">
+    <a href={`${home}#schwerpunkte`} class="hidden text-muted transition hover:text-ink sm:inline">{t('nav.highlights')}</a>
+    <a href={`${home}#kontakt`} class="hidden text-muted transition hover:text-ink sm:inline">{t('nav.contact')}</a>
+    <span aria-hidden="true" class="hidden h-3 w-px bg-border sm:inline-block"></span>
+    <span class="flex items-center gap-2">
+      {
+        lang === 'de' ? (
+          <span class="font-medium text-accent-text" aria-current="true">
+            DE
+          </span>
+        ) : (
+          <a href="/" class="text-muted transition hover:text-ink">
+            DE
+          </a>
+        )
+      }
+      <span aria-hidden="true" class="text-muted">/</span>
+      {
+        lang === 'en' ? (
+          <span class="font-medium text-accent-text" aria-current="true">
+            EN
+          </span>
+        ) : (
+          <a href="/en/" class="text-muted transition hover:text-ink">
+            EN
+          </a>
+        )
+      }
+    </span>
+  </nav>
+</header>

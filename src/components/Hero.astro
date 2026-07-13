@@ -11,36 +11,8 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 ---
 
-<section class="mx-auto max-w-5xl px-6 pt-6 pb-16 md:pb-24">
-  <div class="flex justify-end">
-    <nav class="flex items-center gap-2 font-mono text-xs uppercase tracking-wider" aria-label="Sprache">
-      {
-        lang === 'de' ? (
-          <span class="font-medium text-accent-text" aria-current="true">
-            DE
-          </span>
-        ) : (
-          <a href="/" class="text-muted transition hover:text-ink">
-            DE
-          </a>
-        )
-      }
-      <span aria-hidden="true" class="text-muted">/</span>
-      {
-        lang === 'en' ? (
-          <span class="font-medium text-accent-text" aria-current="true">
-            EN
-          </span>
-        ) : (
-          <a href="/en/" class="text-muted transition hover:text-ink">
-            EN
-          </a>
-        )
-      }
-    </nav>
-  </div>
-
-  <div class="mt-8 grid items-center gap-10 md:mt-10 md:grid-cols-[1.7fr_1fr] md:gap-14">
+<section class="mx-auto max-w-5xl px-6 pt-8 pb-16 md:pt-14 md:pb-24">
+  <div class="grid items-center gap-10 md:grid-cols-[1.7fr_1fr] md:gap-14">
     <div>
       <p class="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-accent-text">
         <span aria-hidden="true" class="h-px w-6 bg-accent"></span>

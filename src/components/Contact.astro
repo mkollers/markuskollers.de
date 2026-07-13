@@ -1,0 +1,52 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'de' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section id="kontakt" class="scroll-mt-20 border-t border-border">
+  <div class="mx-auto grid max-w-5xl gap-10 px-6 py-16 md:grid-cols-[1.4fr_1fr] md:items-end md:py-24">
+    <div>
+      <p class="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-accent-text">
+        <span aria-hidden="true" class="h-px w-6 bg-accent"></span>
+        {t('contact.eyebrow')}
+      </p>
+      <h2 class="mt-5 font-display text-4xl font-light leading-tight tracking-tight md:text-5xl">
+        {t('contact.lead')}
+        <br />
+        <span class="text-accent-text">{t('contact.leadAccent')}</span>
+      </h2>
+    </div>
+    <div class="flex flex-col items-start gap-4 md:items-end">
+      <a
+        href="mailto:mail@markuskollers.de"
+        class="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90"
+      >
+        mail@markuskollers.de
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-[1.05em] transition-transform group-hover:translate-x-0.5"
+          aria-hidden="true"
+        >
+          <path d="M5 12h14"></path>
+          <path d="m13 6 6 6-6 6"></path>
+        </svg>
+      </a>
+      <div class="flex items-center gap-4 font-mono text-xs uppercase tracking-wider text-muted">
+        <a href="https://www.linkedin.com/in/markus-kollers" target="_blank" rel="noopener" class="transition hover:text-ink">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/mkollers" target="_blank" rel="noopener" class="transition hover:text-ink">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
