@@ -21,4 +21,9 @@ describe('useTranslations', () => {
     const t = useTranslations('de');
     expect(t('hero.ctaContact')).toBe('Kontakt aufnehmen');
   });
+
+  it('resolves the cases section label in both languages', () => {
+    expect(useTranslations('de')('cases.label')).toBe('Ausgewählte Projekte');
+    expect(useTranslations('en')('cases.label')).toBe('Selected work');
+  });
 });

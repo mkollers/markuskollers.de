@@ -19,8 +19,20 @@ const projects = defineCollection({
   loader: glob({ pattern: '**/[^_]*.md', base: './src/content/projects' }),
   schema: z.object({
     title: z.string(),
+    lang: z.enum(['de', 'en']),
     tagline: z.string(),
+    logo: z.string().optional(),
     url: z.url().optional(),
+    role: z.string(),
+    timeframe: z.string(),
+    status: z.string().optional(),
+    stack: z.array(z.string()).default([]),
+    partner: z
+      .object({
+        name: z.string(),
+        url: z.url()
+      })
+      .optional(),
     problem: z.string(),
     solution: z.string(),
     result: z.string(),
