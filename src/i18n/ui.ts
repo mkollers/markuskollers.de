@@ -7,7 +7,7 @@ export const defaultLang = 'de';
 
 export const ui = {
   de: {
-    'hero.eyebrow': '10+ Jahre · vom Engineer zum Gründer',
+    'hero.eyebrow': '15 Jahre · vom Engineer zum Gründer',
     'hero.name': 'Markus Kollers',
     'hero.keywords': 'Produkt und Engineering in einer Person.',
     'hero.tagline':
@@ -31,8 +31,31 @@ export const ui = {
     'cases.result': 'Ergebnis',
     'cases.partner': 'In Zusammenarbeit mit',
     'cases.live': 'Live ansehen',
+    'cv.label': 'Werdegang',
+    'cv.since': 'seit',
+    'cv.earlier': 'Frühere Stationen',
+    'skills.label': 'Skills & Kompetenzen',
+    'skills.core': 'Kern-Stack',
+    'skills.familiar': 'vertraut',
+    'skills.group.leadership': 'Führung & Zusammenarbeit',
+    'skills.group.ki': 'KI & Agentic Engineering',
+    'skills.group.language': 'Sprachen',
+    'skills.group.framework': 'Frameworks',
+    'skills.group.cloud': 'Cloud & DevOps',
+    'skills.group.data': 'Daten & Messaging',
+    'skills.group.practice': 'Praktiken & Methoden',
+    'education.label': 'Bildung',
+    'approach.label': 'Wie ich arbeite',
+    'approach.p1':
+      'Bei zwei Unternehmen war ich von der ersten Zeile Code bis zur fertigen Entwicklungsabteilung dabei. Aus dieser Spanne kommt meine Arbeitsweise: nah am Geschäft, hands-on in der Technik und mit dem Anspruch, Dinge zu Ende zu betreiben statt sie nur abzuliefern.',
+    'approach.p2':
+      'Am meisten reizt mich, ein Produkt von der Idee bis in den laufenden Betrieb selbst zu verantworten. „You build it, you run it" ist für mich keine Floskel, sondern die Art, wie ich Software baue.',
+    'life.label': 'Abseits des Jobs',
+    'life.body':
+      'Die meiste Zeit gehört meiner Familie. Ansonsten bin ich am Haus zu finden und mache dort fast alles selbst. Bauen liegt mir wohl, am Rechner wie am Bau.',
     'nav.highlights': 'Schwerpunkte',
     'nav.cases': 'Projekte',
+    'nav.cv': 'Werdegang',
     'nav.contact': 'Kontakt',
     'contact.eyebrow': 'Kontakt',
     'contact.lead': 'Neues Produkt im Kopf?',
@@ -44,7 +67,7 @@ export const ui = {
     'legal.back': 'Zurück zur Startseite'
   },
   en: {
-    'hero.eyebrow': '10+ years · from engineer to founder',
+    'hero.eyebrow': '15 years · from engineer to founder',
     'hero.name': 'Markus Kollers',
     'hero.keywords': 'Product and engineering in one person.',
     'hero.tagline':
@@ -68,8 +91,31 @@ export const ui = {
     'cases.result': 'Outcome',
     'cases.partner': 'In collaboration with',
     'cases.live': 'View live',
+    'cv.label': 'Career',
+    'cv.since': 'since',
+    'cv.earlier': 'Earlier roles',
+    'skills.label': 'Skills & capabilities',
+    'skills.core': 'Core stack',
+    'skills.familiar': 'familiar',
+    'skills.group.leadership': 'Leadership & collaboration',
+    'skills.group.ki': 'AI & agentic engineering',
+    'skills.group.language': 'Languages',
+    'skills.group.framework': 'Frameworks',
+    'skills.group.cloud': 'Cloud & DevOps',
+    'skills.group.data': 'Data & messaging',
+    'skills.group.practice': 'Practices & methods',
+    'education.label': 'Education',
+    'approach.label': 'How I work',
+    'approach.p1':
+      'At two companies I was there from the first line of code to a finished development department. That range shaped how I work: close to the business, hands-on in the tech, and set on running things properly rather than just shipping them.',
+    'approach.p2':
+      'What draws me most is owning a product from the idea to running in production. "You build it, you run it" is not a slogan for me, it is how I build software.',
+    'life.label': 'Beyond work',
+    'life.body':
+      'Most of my time goes to my family. Otherwise you will find me working on the house, where I do almost everything myself. Building seems to suit me, at the keyboard and on the building site.',
     'nav.highlights': 'Focus',
     'nav.cases': 'Work',
+    'nav.cv': 'Career',
     'nav.contact': 'Contact',
     'contact.eyebrow': 'Contact',
     'contact.lead': 'Got a product in mind?',

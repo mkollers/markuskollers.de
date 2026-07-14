@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'de' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const entries = (await getCollection('education')).sort((a, b) => a.data.order - b.data.order);
+const degreeOf = (e: (typeof entries)[number]) => (lang === 'de' ? e.data.degree : e.data.degreeEn);
+const noteOf = (e: (typeof entries)[number]) => (lang === 'de' ? e.data.note : e.data.noteEn);
+---
+
+<section id="bildung" class="scroll-mt-20 mx-auto max-w-5xl px-6 pb-16 md:pb-24">
+  <div class="mb-8 flex items-center gap-3">
+    <span class="h-px w-8 bg-accent"></span>
+    <span class="font-mono text-xs uppercase tracking-[0.2em] text-accent-text">{t('education.label')}</span>
+  </div>
+
+  <ul class="grid gap-6 sm:grid-cols-2">
+    {
+      entries.map((e) => (
+        <li class="border-t border-border pt-4">
+          <div class="font-mono text-xs text-muted">{e.data.period}</div>
+          <div class="mt-2 font-display font-medium text-ink">{degreeOf(e)}</div>
+          <div class="mt-1 text-sm text-muted">{e.data.institution}</div>
+          {noteOf(e) && <div class="mt-1 text-xs text-muted">{noteOf(e)}</div>}
+        </li>
+      ))
+    }
+  </ul>
+</section>

@@ -1,0 +1,19 @@
+---
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'de' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section id="abseits" class="scroll-mt-20 mx-auto max-w-5xl px-6 pb-16 md:pb-24">
+  <div class="mb-8 flex items-center gap-3">
+    <span class="h-px w-8 bg-accent"></span>
+    <span class="font-mono text-xs uppercase tracking-[0.2em] text-accent-text">{t('life.label')}</span>
+  </div>
+
+  <p class="max-w-2xl leading-relaxed text-muted">{t('life.body')}</p>
+</section>

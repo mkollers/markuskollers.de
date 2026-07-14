@@ -1,1 +1,127 @@
-[{ "id": "typescript", "name": "TypeScript", "category": "language", "level": 5 }]
+[
+  {
+    "id": "lead-team",
+    "name": "Team-Aufbau & -Führung",
+    "nameEn": "Team building & leadership",
+    "category": "leadership",
+    "tier": "core",
+    "order": 1
+  },
+  {
+    "id": "lead-mentoring",
+    "name": "Mentoring & Coaching",
+    "nameEn": "Mentoring & coaching",
+    "category": "leadership",
+    "tier": "core",
+    "order": 2
+  },
+  {
+    "id": "lead-standards",
+    "name": "Technische Standards & Qualitätskultur",
+    "nameEn": "Technical standards & quality culture",
+    "category": "leadership",
+    "tier": "core",
+    "order": 3
+  },
+  {
+    "id": "lead-crossfunc",
+    "name": "Cross-funktionale Zusammenarbeit",
+    "nameEn": "Cross-functional collaboration",
+    "category": "leadership",
+    "tier": "core",
+    "order": 4
+  },
+  {
+    "id": "lead-stakeholder",
+    "name": "Stakeholder-Management",
+    "nameEn": "Stakeholder management",
+    "category": "leadership",
+    "tier": "core",
+    "order": 5
+  },
+  {
+    "id": "lead-remote",
+    "name": "Remote- & internationale Teams",
+    "nameEn": "Remote & international teams",
+    "category": "leadership",
+    "tier": "core",
+    "order": 6
+  },
+
+  { "id": "ki-agentic", "name": "Agentic Coding", "category": "ki", "tier": "core", "order": 1 },
+  {
+    "id": "ki-multiagent",
+    "name": "Multi-Agent-Orchestrierung",
+    "nameEn": "Multi-agent orchestration",
+    "category": "ki",
+    "tier": "core",
+    "order": 2
+  },
+  { "id": "ki-claude", "name": "Claude Code", "category": "ki", "tier": "core", "order": 3 },
+  { "id": "ki-llm", "name": "LLM-Integration", "nameEn": "LLM integration", "category": "ki", "tier": "familiar", "order": 4 },
+  { "id": "ki-mcp", "name": "MCP (Model Context Protocol)", "category": "ki", "tier": "familiar", "order": 5 },
+  { "id": "ki-prompt", "name": "Prompt Engineering", "category": "ki", "tier": "familiar", "order": 6 },
+
+  { "id": "typescript", "name": "TypeScript", "category": "language", "tier": "core", "order": 1 },
+  { "id": "csharp", "name": "C# / .NET", "category": "language", "tier": "core", "order": 2 },
+  { "id": "nodejs", "name": "Node.js", "category": "language", "tier": "core", "order": 3 },
+  { "id": "sql", "name": "SQL / T-SQL", "category": "language", "tier": "core", "order": 4 },
+  { "id": "python", "name": "Python", "category": "language", "tier": "familiar", "order": 5 },
+  { "id": "java", "name": "Java", "category": "language", "tier": "familiar", "order": 6 },
+  { "id": "go", "name": "Go", "category": "language", "tier": "familiar", "order": 7 },
+  { "id": "bash", "name": "Bash / Shell", "category": "language", "tier": "familiar", "order": 8 },
+  { "id": "cpp", "name": "C++", "category": "language", "tier": "familiar", "order": 9 },
+  { "id": "php", "name": "PHP", "category": "language", "tier": "familiar", "order": 10 },
+
+  { "id": "react-next", "name": "React / Next.js", "category": "framework", "tier": "core", "order": 1 },
+  { "id": "express", "name": "Express", "category": "framework", "tier": "core", "order": 2 },
+  { "id": "tailwind", "name": "Tailwind CSS", "category": "framework", "tier": "core", "order": 3 },
+  { "id": "angular", "name": "Angular", "category": "framework", "tier": "familiar", "order": 4 },
+  { "id": "aspnet", "name": "ASP.NET", "category": "framework", "tier": "familiar", "order": 5 },
+  { "id": "astro", "name": "Astro", "category": "framework", "tier": "familiar", "order": 6 },
+
+  { "id": "kubernetes", "name": "Kubernetes", "category": "cloud", "tier": "core", "order": 1 },
+  { "id": "helm", "name": "Helm", "category": "cloud", "tier": "core", "order": 2 },
+  { "id": "docker", "name": "Docker", "category": "cloud", "tier": "core", "order": 3 },
+  { "id": "cicd", "name": "CI/CD", "category": "cloud", "tier": "core", "order": 4 },
+  { "id": "gitops", "name": "GitOps & Monorepo", "category": "cloud", "tier": "core", "order": 5 },
+  { "id": "observability", "name": "Prometheus / Grafana / Loki", "category": "cloud", "tier": "core", "order": 6 },
+  { "id": "serverless", "name": "Serverless", "category": "cloud", "tier": "core", "order": 7 },
+  { "id": "azure", "name": "Azure", "category": "cloud", "tier": "core", "order": 8 },
+  { "id": "aws", "name": "AWS", "category": "cloud", "tier": "core", "order": 9 },
+  { "id": "gcp", "name": "GCP", "category": "cloud", "tier": "core", "order": 10 },
+  { "id": "devsecops", "name": "DevSecOps", "category": "cloud", "tier": "familiar", "order": 11 },
+
+  { "id": "postgres", "name": "PostgreSQL", "category": "data", "tier": "core", "order": 1 },
+  { "id": "mssql", "name": "MS SQL Server", "category": "data", "tier": "core", "order": 2 },
+  { "id": "rabbitmq", "name": "RabbitMQ", "category": "data", "tier": "core", "order": 3 },
+  { "id": "mongodb", "name": "MongoDB", "category": "data", "tier": "familiar", "order": 4 },
+  { "id": "redis", "name": "Redis", "category": "data", "tier": "familiar", "order": 5 },
+  { "id": "dgraph", "name": "Dgraph", "category": "data", "tier": "familiar", "order": 6 },
+  { "id": "sqlite", "name": "SQLite", "category": "data", "tier": "familiar", "order": 7 },
+  { "id": "firebase", "name": "Firebase / Firestore", "category": "data", "tier": "familiar", "order": 8 },
+
+  {
+    "id": "tdd",
+    "name": "Testgetriebene Entwicklung",
+    "nameEn": "Test-driven development",
+    "category": "practice",
+    "tier": "core",
+    "order": 1
+  },
+  { "id": "microservices", "name": "Microservices", "category": "practice", "tier": "core", "order": 2 },
+  { "id": "restapis", "name": "REST / APIs", "category": "practice", "tier": "core", "order": 3 },
+  { "id": "eventdriven", "name": "Event-Driven Architecture", "category": "practice", "tier": "core", "order": 4 },
+  { "id": "systemdesign", "name": "System-Design", "nameEn": "System design", "category": "practice", "tier": "core", "order": 5 },
+  { "id": "sast", "name": "SAST (SonarQube)", "category": "practice", "tier": "core", "order": 6 },
+  { "id": "agile", "name": "Agile / Scrum / Kanban", "category": "practice", "tier": "core", "order": 7 },
+  {
+    "id": "e2e",
+    "name": "E2E-Tests (Playwright)",
+    "nameEn": "E2E tests (Playwright)",
+    "category": "practice",
+    "tier": "familiar",
+    "order": 8
+  },
+  { "id": "graphql", "name": "GraphQL", "category": "practice", "tier": "familiar", "order": 9 }
+]

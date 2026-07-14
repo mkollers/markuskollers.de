@@ -6,11 +6,18 @@ const cv = defineCollection({
   loader: glob({ pattern: '**/[^_]*.md', base: './src/content/cv' }),
   schema: z.object({
     role: z.string(),
+    roleEn: z.string(),
     org: z.string(),
     start: z.string(),
     end: z.string().nullable().default(null),
     location: z.string().optional(),
     summary: z.string(),
+    summaryEn: z.string(),
+    logo: z.string().optional(),
+    logoScale: z.number().default(1),
+    stack: z.array(z.string()).default([]),
+    focus: z.array(z.enum(['leadership', 'tech', 'produkt'])).default([]),
+    tier: z.enum(['main', 'earlier']).default('main'),
     order: z.number()
   })
 });
@@ -45,8 +52,24 @@ const skills = defineCollection({
   schema: z.object({
     id: z.string(),
     name: z.string(),
-    category: z.enum(['language', 'framework', 'cloud', 'practice']),
-    level: z.number().min(1).max(5)
+    nameEn: z.string().optional(),
+    category: z.enum(['leadership', 'ki', 'language', 'framework', 'cloud', 'data', 'practice']),
+    tier: z.enum(['core', 'familiar']).default('familiar'),
+    order: z.number()
+  })
+});
+
+const education = defineCollection({
+  loader: file('./src/content/education.json'),
+  schema: z.object({
+    id: z.string(),
+    degree: z.string(),
+    degreeEn: z.string(),
+    institution: z.string(),
+    period: z.string(),
+    note: z.string().optional(),
+    noteEn: z.string().optional(),
+    order: z.number()
   })
 });
 
@@ -61,4 +84,4 @@ const targets = defineCollection({
   })
 });
 
-export const collections = { cv, projects, skills, targets };
+export const collections = { cv, projects, skills, education, targets };

@@ -9,7 +9,6 @@ timeframe: seit 2026
 stack:
   - Claude Code
   - Agentic Engineering
-  - Builder-Critic
   - Kubernetes
   - Helm
   - TypeScript
@@ -20,8 +19,7 @@ problem: >-
   Produkt, das dorthin passt, wo die Arbeit wirklich stattfindet.
 solution: >-
   Cloud-native Plattform auf Kubernetes, komplett eigenverantwortet: Architektur, CI/CD, Monitoring und
-  ein Sicherheitskonzept mit Hosting in der EU. Jeder Change läuft im Builder-Critic-Muster gegen eine
-  automatisierte Teststrecke.
+  ein Sicherheitskonzept mit Hosting in der EU. Jeder Change läuft gegen eine automatisierte Teststrecke.
 result: >-
   Bis zu acht KI-Agenten arbeiten parallel an der Umsetzung. Das gibt mir bei Solo-Besetzung den
   Durchsatz eines kleinen Teams.

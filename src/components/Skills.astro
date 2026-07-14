@@ -1,0 +1,76 @@
+---
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'de' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const all = await getCollection('skills');
+const nameOf = (s: (typeof all)[number]) => (lang === 'en' && s.data.nameEn ? s.data.nameEn : s.data.name);
+const sortTier = (a: (typeof all)[number], b: (typeof all)[number]) =>
+  a.data.tier === b.data.tier ? a.data.order - b.data.order : a.data.tier === 'core' ? -1 : 1;
+const byCat = (c: string) => all.filter((s) => s.data.category === c).sort(sortTier);
+
+const featured = (['leadership', 'ki'] as const).map((k) => ({ key: k, items: byCat(k) })).filter((g) => g.items.length > 0);
+const groups = ['language', 'framework', 'cloud', 'data', 'practice'] as const;
+const byGroup = groups.map((g) => ({ key: g, items: byCat(g) }));
+---
+
+<section id="skills" class="scroll-mt-20 mx-auto max-w-5xl px-6 pb-16 md:pb-24">
+  <div class="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2">
+    <div class="flex items-center gap-3">
+      <span class="h-px w-8 bg-accent"></span>
+      <span class="font-mono text-xs uppercase tracking-[0.2em] text-accent-text">{t('skills.label')}</span>
+    </div>
+    <div class="flex items-center gap-4 font-mono text-xs text-muted">
+      <span class="flex items-center gap-1.5">
+        <span class="size-2.5 rounded-sm bg-accent-soft ring-1 ring-inset ring-accent/20"></span>
+        {t('skills.core')}
+      </span>
+      <span class="flex items-center gap-1.5">
+        <span class="size-2.5 rounded-sm border border-border"></span>
+        {t('skills.familiar')}
+      </span>
+    </div>
+  </div>
+
+  {
+    featured.map((g) => (
+      <div class="mb-8 border-b border-border pb-8">
+        <h3 class="font-mono text-xs uppercase tracking-wider text-accent-text">{t(`skills.group.${g.key}`)}</h3>
+        <div class="mt-3 flex flex-wrap gap-2">
+          {g.items.map((s) =>
+            s.data.tier === 'core' ? (
+              <span class="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-text">{nameOf(s)}</span>
+            ) : (
+              <span class="rounded-md border border-border px-2.5 py-1 text-xs text-muted">{nameOf(s)}</span>
+            )
+          )}
+        </div>
+      </div>
+    ))
+  }
+
+  <div class="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      byGroup.map((g) => (
+        <div class={g.key === 'practice' ? 'sm:col-span-2' : undefined}>
+          <h3 class="font-mono text-xs uppercase tracking-wider text-accent-text">{t(`skills.group.${g.key}`)}</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            {g.items.map((s) =>
+              s.data.tier === 'core' ? (
+                <span class="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-text">{nameOf(s)}</span>
+              ) : (
+                <span class="rounded-md border border-border px-2.5 py-1 text-xs text-muted">{nameOf(s)}</span>
+              )
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

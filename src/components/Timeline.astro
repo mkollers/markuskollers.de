@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'de' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const fmt = (s: string) => {
+  const [y, m] = s.split('-');
+  return `${m}/${y}`;
+};
+const period = (start: string, end: string | null) => (end ? `${fmt(start)} – ${fmt(end)}` : `${t('cv.since')} ${fmt(start)}`);
+
+const entries = (await getCollection('cv')).sort((a, b) => a.data.order - b.data.order);
+const main = entries.filter((e) => e.data.tier === 'main');
+const earlier = entries.filter((e) => e.data.tier === 'earlier');
+const roleOf = (e: (typeof entries)[number]) => (lang === 'de' ? e.data.role : e.data.roleEn);
+const summaryOf = (e: (typeof entries)[number]) => (lang === 'de' ? e.data.summary : e.data.summaryEn);
+---
+
+<section id="werdegang" class="scroll-mt-20 mx-auto max-w-5xl px-6 pb-16 md:pb-24">
+  <div class="mb-8 flex items-center gap-3">
+    <span class="h-px w-8 bg-accent"></span>
+    <span class="font-mono text-xs uppercase tracking-[0.2em] text-accent-text">{t('cv.label')}</span>
+  </div>
+
+  <ol class="ml-1 border-l border-border">
+    {
+      main.map((e) => (
+        <li class="relative pb-8 pl-6 last:pb-0 md:pl-8">
+          <span class="absolute top-1.5 -left-[5px] size-2.5 rounded-full bg-accent" aria-hidden="true" />
+          <div class="flex items-start justify-between gap-4">
+            <div class="min-w-0">
+              <div class="font-mono text-xs text-muted">{period(e.data.start, e.data.end)}</div>
+              <h3 class="mt-1 font-display text-lg font-medium text-ink">{roleOf(e)}</h3>
+              <div class="font-mono text-xs uppercase tracking-wider text-accent-text">
+                {e.data.org}
+                {e.data.location && <span class="text-muted"> · {e.data.location}</span>}
+              </div>
+            </div>
+            {e.data.logo && (
+              <img
+                src={e.data.logo}
+                alt=""
+                loading="lazy"
+                style={`height:${Math.round(24 * e.data.logoScale)}px`}
+                class="mt-1 w-auto max-w-[35%] shrink-0 object-contain object-right"
+              />
+            )}
+          </div>
+          <p class="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{summaryOf(e)}</p>
+          {e.data.stack.length > 0 && (
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              {e.data.stack.map((s) => (
+                <span class="rounded border border-border px-1.5 py-0.5 font-mono text-[11px] text-muted">{s}</span>
+              ))}
+            </div>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+
+  {
+    earlier.length > 0 && (
+      <div class="mt-8 border-t border-border pt-6">
+        <div class="mb-4 font-mono text-xs uppercase tracking-wider text-muted">{t('cv.earlier')}</div>
+        <ul class="grid gap-x-8 gap-y-3 sm:grid-cols-2">
+          {earlier.map((e) => (
+            <li class="flex items-baseline justify-between gap-4 text-sm">
+              <span class="text-ink">
+                {roleOf(e)} <span class="text-muted">· {e.data.org}</span>
+              </span>
+              <span class="shrink-0 font-mono text-xs text-muted">{period(e.data.start, e.data.end)}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+</section>
