@@ -53,7 +53,7 @@ const skills = defineCollection({
     id: z.string(),
     name: z.string(),
     nameEn: z.string().optional(),
-    category: z.enum(['leadership', 'language', 'framework', 'cloud', 'data', 'practice']),
+    category: z.enum(['leadership', 'ki', 'language', 'framework', 'cloud', 'data', 'practice']),
     tier: z.enum(['core', 'familiar']).default('familiar'),
     order: z.number()
   })

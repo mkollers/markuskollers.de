@@ -11,16 +11,13 @@ const t = useTranslations(lang);
 
 const all = await getCollection('skills');
 const nameOf = (s: (typeof all)[number]) => (lang === 'en' && s.data.nameEn ? s.data.nameEn : s.data.name);
+const sortTier = (a: (typeof all)[number], b: (typeof all)[number]) =>
+  a.data.tier === b.data.tier ? a.data.order - b.data.order : a.data.tier === 'core' ? -1 : 1;
+const byCat = (c: string) => all.filter((s) => s.data.category === c).sort(sortTier);
 
-const leadership = all.filter((s) => s.data.category === 'leadership').sort((a, b) => a.data.order - b.data.order);
-
+const featured = (['leadership', 'ki'] as const).map((k) => ({ key: k, items: byCat(k) })).filter((g) => g.items.length > 0);
 const groups = ['language', 'framework', 'cloud', 'data', 'practice'] as const;
-const byGroup = groups.map((g) => ({
-  key: g,
-  items: all
-    .filter((s) => s.data.category === g)
-    .sort((a, b) => (a.data.tier === b.data.tier ? a.data.order - b.data.order : a.data.tier === 'core' ? -1 : 1))
-}));
+const byGroup = groups.map((g) => ({ key: g, items: byCat(g) }));
 ---
 
 <section id="skills" class="scroll-mt-20 mx-auto max-w-5xl px-6 pb-16 md:pb-24">
@@ -42,16 +39,20 @@ const byGroup = groups.map((g) => ({
   </div>
 
   {
-    leadership.length > 0 && (
+    featured.map((g) => (
       <div class="mb-8 border-b border-border pb-8">
-        <h3 class="font-mono text-xs uppercase tracking-wider text-accent-text">{t('skills.group.leadership')}</h3>
+        <h3 class="font-mono text-xs uppercase tracking-wider text-accent-text">{t(`skills.group.${g.key}`)}</h3>
         <div class="mt-3 flex flex-wrap gap-2">
-          {leadership.map((s) => (
-            <span class="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-text">{nameOf(s)}</span>
-          ))}
+          {g.items.map((s) =>
+            s.data.tier === 'core' ? (
+              <span class="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-text">{nameOf(s)}</span>
+            ) : (
+              <span class="rounded-md border border-border px-2.5 py-1 text-xs text-muted">{nameOf(s)}</span>
+            )
+          )}
         </div>
       </div>
-    )
+    ))
   }
 
   <div class="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
