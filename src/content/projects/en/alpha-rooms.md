@@ -7,6 +7,8 @@ role: Freelance · concept, architecture & build
 timeframe: about 160 hours
 status: Live since 2026
 stack:
+  - Claude Code
+  - Agentic Engineering
   - Next.js
   - PostgreSQL
   - better-auth

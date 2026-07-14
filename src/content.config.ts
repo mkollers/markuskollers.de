@@ -26,6 +26,12 @@ const projects = defineCollection({
     timeframe: z.string(),
     status: z.string().optional(),
     stack: z.array(z.string()).default([]),
+    partner: z
+      .object({
+        name: z.string(),
+        url: z.url()
+      })
+      .optional(),
     problem: z.string(),
     solution: z.string(),
     result: z.string(),

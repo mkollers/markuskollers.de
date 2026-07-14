@@ -6,6 +6,9 @@ role: Gründer & Geschäftsführer
 timeframe: seit 2026
 status: In Entwicklung
 stack:
+  - Claude Code
+  - Agentic Engineering
+  - Builder-Critic
   - Kubernetes
   - Helm
   - TypeScript

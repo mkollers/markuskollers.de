@@ -6,6 +6,9 @@ role: Founder & managing director
 timeframe: since 2026
 status: In development
 stack:
+  - Claude Code
+  - Agentic Engineering
+  - Builder-Critic
   - Kubernetes
   - Helm
   - TypeScript

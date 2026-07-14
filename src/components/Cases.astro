@@ -33,6 +33,14 @@ const cases = (await getCollection('projects', (p) => p.data.lang === lang)).sor
 
           <h3 class="mt-3 font-display text-2xl font-medium text-ink">{c.data.title}</h3>
           <p class="mt-1 leading-relaxed text-muted">{c.data.tagline}</p>
+          {c.data.partner && (
+            <p class="mt-2 font-mono text-xs text-muted">
+              {t('cases.partner')}{' '}
+              <a href={c.data.partner.url} target="_blank" rel="noopener noreferrer" class="text-accent-text hover:underline">
+                {c.data.partner.name}
+              </a>
+            </p>
+          )}
 
           <dl class="mt-6 grid gap-5 sm:grid-cols-3">
             <div>
