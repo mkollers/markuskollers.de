@@ -18,13 +18,5 @@
     "note": "Ausbildung",
     "noteEn": "Vocational training",
     "order": 2
-  },
-  {
-    "id": "frankfurt-uas",
-    "degree": "Mechatronik (zwei Semester)",
-    "degreeEn": "Mechatronics (two semesters)",
-    "institution": "Frankfurt University of Applied Sciences",
-    "period": "2008 – 2009",
-    "order": 3
   }
 ]
