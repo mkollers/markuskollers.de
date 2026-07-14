@@ -65,7 +65,13 @@
   { "id": "typescript", "name": "TypeScript", "category": "language", "tier": "core", "order": 1 },
   { "id": "csharp", "name": "C# / .NET", "category": "language", "tier": "core", "order": 2 },
   { "id": "nodejs", "name": "Node.js", "category": "language", "tier": "core", "order": 3 },
-  { "id": "python", "name": "Python", "category": "language", "tier": "familiar", "order": 4 },
+  { "id": "sql", "name": "SQL / T-SQL", "category": "language", "tier": "core", "order": 4 },
+  { "id": "python", "name": "Python", "category": "language", "tier": "familiar", "order": 5 },
+  { "id": "java", "name": "Java", "category": "language", "tier": "familiar", "order": 6 },
+  { "id": "go", "name": "Go", "category": "language", "tier": "familiar", "order": 7 },
+  { "id": "bash", "name": "Bash / Shell", "category": "language", "tier": "familiar", "order": 8 },
+  { "id": "cpp", "name": "C++", "category": "language", "tier": "familiar", "order": 9 },
+  { "id": "php", "name": "PHP", "category": "language", "tier": "familiar", "order": 10 },
 
   { "id": "react-next", "name": "React / Next.js", "category": "framework", "tier": "core", "order": 1 },
   { "id": "express", "name": "Express", "category": "framework", "tier": "core", "order": 2 },
@@ -92,6 +98,8 @@
   { "id": "mongodb", "name": "MongoDB", "category": "data", "tier": "familiar", "order": 4 },
   { "id": "redis", "name": "Redis", "category": "data", "tier": "familiar", "order": 5 },
   { "id": "dgraph", "name": "Dgraph", "category": "data", "tier": "familiar", "order": 6 },
+  { "id": "sqlite", "name": "SQLite", "category": "data", "tier": "familiar", "order": 7 },
+  { "id": "firebase", "name": "Firebase / Firestore", "category": "data", "tier": "familiar", "order": 8 },
 
   {
     "id": "tdd",
@@ -101,34 +109,19 @@
     "tier": "core",
     "order": 1
   },
-  { "id": "e2e", "name": "E2E-Tests (Playwright)", "nameEn": "E2E tests (Playwright)", "category": "practice", "tier": "core", "order": 2 },
+  { "id": "microservices", "name": "Microservices", "category": "practice", "tier": "core", "order": 2 },
+  { "id": "restapis", "name": "REST / APIs", "category": "practice", "tier": "core", "order": 3 },
+  { "id": "eventdriven", "name": "Event-Driven Architecture", "category": "practice", "tier": "core", "order": 4 },
+  { "id": "systemdesign", "name": "System-Design", "nameEn": "System design", "category": "practice", "tier": "core", "order": 5 },
+  { "id": "sast", "name": "SAST (SonarQube)", "category": "practice", "tier": "core", "order": 6 },
+  { "id": "agile", "name": "Agile / Scrum / Kanban", "category": "practice", "tier": "core", "order": 7 },
   {
-    "id": "quality-gates",
-    "name": "Quality-Gates (SonarQube)",
-    "nameEn": "Quality gates (SonarQube)",
-    "category": "practice",
-    "tier": "core",
-    "order": 3
-  },
-  {
-    "id": "dora",
-    "name": "DORA-/Delivery-Metriken",
-    "nameEn": "DORA / delivery metrics",
-    "category": "practice",
-    "tier": "core",
-    "order": 4
-  },
-  { "id": "microservices", "name": "Microservices & REST/APIs", "category": "practice", "tier": "core", "order": 5 },
-  { "id": "eventdriven", "name": "Event-Driven Architecture", "category": "practice", "tier": "core", "order": 6 },
-  { "id": "systemdesign", "name": "System-Design", "nameEn": "System design", "category": "practice", "tier": "core", "order": 7 },
-  { "id": "agile", "name": "Agile / Scrum / Kanban", "category": "practice", "tier": "core", "order": 8 },
-  { "id": "graphql", "name": "GraphQL", "category": "practice", "tier": "familiar", "order": 9 },
-  {
-    "id": "identity",
-    "name": "API-Gateway & Identity (Kong, OIDC)",
-    "nameEn": "API gateway & identity (Kong, OIDC)",
+    "id": "e2e",
+    "name": "E2E-Tests (Playwright)",
+    "nameEn": "E2E tests (Playwright)",
     "category": "practice",
     "tier": "familiar",
-    "order": 10
-  }
+    "order": 8
+  },
+  { "id": "graphql", "name": "GraphQL", "category": "practice", "tier": "familiar", "order": 9 }
 ]
