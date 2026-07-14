@@ -1,1 +1,37 @@
-[{ "id": "typescript", "name": "TypeScript", "category": "language", "level": 5 }]
+[
+  { "id": "typescript", "name": "TypeScript", "category": "language", "tier": "core", "order": 1 },
+  { "id": "csharp", "name": "C# / .NET", "category": "language", "tier": "core", "order": 2 },
+  { "id": "nodejs", "name": "Node.js", "category": "language", "tier": "core", "order": 3 },
+  { "id": "go", "name": "Go", "category": "language", "tier": "familiar", "order": 4 },
+  { "id": "java", "name": "Java", "category": "language", "tier": "familiar", "order": 5 },
+  { "id": "python", "name": "Python", "category": "language", "tier": "familiar", "order": 6 },
+
+  { "id": "angular", "name": "Angular", "category": "framework", "tier": "core", "order": 1 },
+  { "id": "react-next", "name": "React / Next.js", "category": "framework", "tier": "core", "order": 2 },
+  { "id": "astro", "name": "Astro", "category": "framework", "tier": "familiar", "order": 3 },
+
+  { "id": "kubernetes", "name": "Kubernetes", "category": "cloud", "tier": "core", "order": 1 },
+  { "id": "helm", "name": "Helm", "category": "cloud", "tier": "core", "order": 2 },
+  { "id": "docker", "name": "Docker", "category": "cloud", "tier": "core", "order": 3 },
+  { "id": "cicd", "name": "CI/CD", "category": "cloud", "tier": "core", "order": 4 },
+  { "id": "gitops", "name": "GitOps & Monorepo", "category": "cloud", "tier": "core", "order": 5 },
+  { "id": "observability", "name": "Monitoring & Observability", "category": "cloud", "tier": "core", "order": 6 },
+  { "id": "azure", "name": "Azure", "category": "cloud", "tier": "familiar", "order": 7 },
+  { "id": "aws", "name": "AWS", "category": "cloud", "tier": "familiar", "order": 8 },
+  { "id": "gcp", "name": "GCP", "category": "cloud", "tier": "familiar", "order": 9 },
+
+  { "id": "postgres", "name": "PostgreSQL", "category": "data", "tier": "core", "order": 1 },
+  { "id": "mssql", "name": "MS SQL", "category": "data", "tier": "familiar", "order": 2 },
+  { "id": "mongodb", "name": "MongoDB", "category": "data", "tier": "familiar", "order": 3 },
+  { "id": "redis", "name": "Redis", "category": "data", "tier": "familiar", "order": 4 },
+
+  { "id": "agentic", "name": "Agentic Coding", "category": "practice", "tier": "core", "order": 1 },
+  { "id": "tdd", "name": "Testgetriebene Entwicklung", "category": "practice", "tier": "core", "order": 2 },
+  { "id": "e2e", "name": "E2E-Tests (Playwright)", "category": "practice", "tier": "core", "order": 3 },
+  { "id": "quality-gates", "name": "Quality-Gates (SonarQube)", "category": "practice", "tier": "core", "order": 4 },
+  { "id": "dora", "name": "DORA-/Delivery-Metriken", "category": "practice", "tier": "core", "order": 5 },
+  { "id": "microservices", "name": "Microservices & REST/APIs", "category": "practice", "tier": "core", "order": 6 },
+  { "id": "eventing", "name": "Message Queues / Event-Streaming", "category": "practice", "tier": "familiar", "order": 7 },
+  { "id": "identity", "name": "API-Gateway & Identity (Kong, OIDC)", "category": "practice", "tier": "familiar", "order": 8 },
+  { "id": "agile", "name": "Agile / Scrum / Kanban", "category": "practice", "tier": "core", "order": 9 }
+]
