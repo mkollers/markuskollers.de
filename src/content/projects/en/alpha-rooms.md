@@ -2,6 +2,7 @@
 title: Alpha Meeting Rooms
 lang: en
 tagline: An aging booking system, rebuilt from scratch.
+logo: /logos/alpha-rooms.svg
 url: https://booking.alpha-mr.de
 role: Freelance · concept, architecture & build
 timeframe: about 160 hours

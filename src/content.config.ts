@@ -21,6 +21,7 @@ const projects = defineCollection({
     title: z.string(),
     lang: z.enum(['de', 'en']),
     tagline: z.string(),
+    logo: z.string().optional(),
     url: z.url().optional(),
     role: z.string(),
     timeframe: z.string(),

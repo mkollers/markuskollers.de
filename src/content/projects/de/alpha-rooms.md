@@ -2,6 +2,7 @@
 title: Alpha Meeting Rooms
 lang: de
 tagline: Ein in die Jahre gekommenes Buchungssystem, komplett neu aufgesetzt.
+logo: /logos/alpha-rooms.svg
 url: https://booking.alpha-mr.de
 role: Freelance · Konzeption, Architektur & Umsetzung
 timeframe: rund 160 Stunden

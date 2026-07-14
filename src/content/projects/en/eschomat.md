@@ -2,6 +2,7 @@
 title: Eschomat
 lang: en
 tagline: A voting guide for the municipal election in Eschborn.
+logo: /logos/eschomat.svg
 url: https://www.eschomat.de
 role: Technical implementation, volunteer
 timeframe: '2021'

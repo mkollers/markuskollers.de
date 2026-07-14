@@ -2,6 +2,7 @@
 title: Eschomat
 lang: de
 tagline: Ein Wahl-o-mat für die Kommunalwahl in Eschborn.
+logo: /logos/eschomat.svg
 url: https://www.eschomat.de
 role: Technische Umsetzung, ehrenamtlich
 timeframe: '2021'

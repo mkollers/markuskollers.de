@@ -2,9 +2,10 @@
 title: Qrafto
 lang: de
 tagline: Meine eigene SaaS für Handwerk und Bau, gebaut mit einem Schwarm KI-Agenten.
+logo: /logos/qrafto.svg
+url: https://qrafto.de
 role: Gründer & Geschäftsführer
 timeframe: seit 2026
-status: In Entwicklung
 stack:
   - Claude Code
   - Agentic Engineering
