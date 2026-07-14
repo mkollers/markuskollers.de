@@ -13,6 +13,7 @@ const cv = defineCollection({
     location: z.string().optional(),
     summary: z.string(),
     summaryEn: z.string(),
+    stack: z.array(z.string()).default([]),
     focus: z.array(z.enum(['leadership', 'tech', 'produkt'])).default([]),
     tier: z.enum(['main', 'earlier']).default('main'),
     order: z.number()

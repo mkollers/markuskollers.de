@@ -4,6 +4,11 @@ roleEn: Software Architect IoT / Cloud
 org: Tecan Software Competence Center
 start: 2021-10
 end: 2022-09
+stack:
+  - IoT
+  - Over-the-Air
+  - Cloud
+  - CI/CD
 focus:
   - tech
 tier: main

@@ -5,6 +5,11 @@ org: vertical GmbH
 start: 2017-01
 end: 2021-06
 location: Sulzbach (Taunus)
+stack:
+  - Angular
+  - Docker
+  - Kubernetes
+  - CI/CD
 focus:
   - produkt
   - leadership
