@@ -6,18 +6,21 @@ start: 2021-10
 end: 2022-09
 logo: /logos/cv-tecan.png
 stack:
+  - Enterprise-Architektur
   - IoT
   - Over-the-Air
   - Cloud
-  - CI/CD
 focus:
   - tech
 tier: main
 order: 4
 summary: >-
-  Architektur für vernetzte Geräte in einem stark regulierten, cybersecurity-kritischen Umfeld, inklusive
-  Software-Updates aus der Ferne (Over-the-Air). Dazu CI/CD und Prozessoptimierung.
+  Komplexe Enterprise-Architekturen für vernetzte Geräte in einem stark regulierten,
+  cybersecurity-kritischen Umfeld konzipiert, inklusive Software-Updates aus der Ferne (Over-the-Air).
+  Projektleiter und Produktmanager habe ich dank meiner Erfahrung bei Projektplänen und Produktkonzepten
+  beraten.
 summaryEn: >-
-  Architecture for connected devices in a heavily regulated, cybersecurity-critical environment,
-  including remote software updates (over-the-air). Plus CI/CD and process optimisation.
+  Designed complex enterprise architectures for connected devices in a heavily regulated,
+  cybersecurity-critical environment, including remote software updates (over-the-air). Drawing on my
+  experience, I advised project leads and product managers on project plans and product concepts.
 ---

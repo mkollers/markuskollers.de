@@ -1,6 +1,6 @@
 ---
-role: Software Developer
-roleEn: Software Developer
+role: Java Developer
+roleEn: Java Developer
 org: OSComputing AG
 start: 2012-01
 end: 2012-10

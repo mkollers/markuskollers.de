@@ -1,6 +1,6 @@
 ---
-role: Software Developer
-roleEn: Software Developer
+role: C# / Python Entwickler
+roleEn: C# / Python Developer
 org: BÖWE SYSTEC GmbH
 start: 2012-11
 end: 2015-02

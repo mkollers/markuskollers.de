@@ -1,6 +1,6 @@
 ---
-role: Software Developer
-roleEn: Software Developer
+role: Angular Developer
+roleEn: Angular Developer
 org: Universal-Investment
 start: 2016-07
 end: 2016-12
