@@ -87,10 +87,11 @@
   { "id": "devsecops", "name": "DevSecOps", "category": "cloud", "tier": "familiar", "order": 11 },
 
   { "id": "postgres", "name": "PostgreSQL", "category": "data", "tier": "core", "order": 1 },
-  { "id": "rabbitmq", "name": "RabbitMQ", "category": "data", "tier": "core", "order": 2 },
-  { "id": "mssql", "name": "MS SQL", "category": "data", "tier": "familiar", "order": 3 },
+  { "id": "mssql", "name": "MS SQL Server", "category": "data", "tier": "core", "order": 2 },
+  { "id": "rabbitmq", "name": "RabbitMQ", "category": "data", "tier": "core", "order": 3 },
   { "id": "mongodb", "name": "MongoDB", "category": "data", "tier": "familiar", "order": 4 },
   { "id": "redis", "name": "Redis", "category": "data", "tier": "familiar", "order": 5 },
+  { "id": "dgraph", "name": "Dgraph", "category": "data", "tier": "familiar", "order": 6 },
 
   {
     "id": "tdd",
