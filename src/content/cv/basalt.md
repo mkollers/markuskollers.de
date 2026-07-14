@@ -9,8 +9,9 @@ logo: /logos/cv-basalt.png
 stack:
   - Kubernetes
   - Helm
+  - Node.js
+  - React / Next.js
   - GitLab CI/CD
-  - Microservices
   - SAP-Integration
 focus:
   - tech

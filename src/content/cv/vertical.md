@@ -7,6 +7,8 @@ end: 2021-06
 location: Sulzbach (Taunus)
 stack:
   - Angular
+  - C# / .NET
+  - Go
   - Docker
   - Kubernetes
   - CI/CD
