@@ -5,6 +5,7 @@ org: Qrafto UG
 start: 2026-01
 end: null
 location: Remote
+logo: /logos/qrafto.svg
 stack:
   - B2B-SaaS
   - Kubernetes

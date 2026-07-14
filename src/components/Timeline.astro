@@ -33,11 +33,18 @@ const summaryOf = (e: (typeof entries)[number]) => (lang === 'de' ? e.data.summa
       main.map((e) => (
         <li class="relative pb-8 pl-6 last:pb-0 md:pl-8">
           <span class="absolute top-1.5 -left-[5px] size-2.5 rounded-full bg-accent" aria-hidden="true" />
-          <div class="font-mono text-xs text-muted">{period(e.data.start, e.data.end)}</div>
-          <h3 class="mt-1 font-display text-lg font-medium text-ink">{roleOf(e)}</h3>
-          <div class="font-mono text-xs uppercase tracking-wider text-accent-text">
-            {e.data.org}
-            {e.data.location && <span class="text-muted"> · {e.data.location}</span>}
+          <div class="flex items-start justify-between gap-4">
+            <div class="min-w-0">
+              <div class="font-mono text-xs text-muted">{period(e.data.start, e.data.end)}</div>
+              <h3 class="mt-1 font-display text-lg font-medium text-ink">{roleOf(e)}</h3>
+              <div class="font-mono text-xs uppercase tracking-wider text-accent-text">
+                {e.data.org}
+                {e.data.location && <span class="text-muted"> · {e.data.location}</span>}
+              </div>
+            </div>
+            {e.data.logo && (
+              <img src={e.data.logo} alt="" loading="lazy" class="mt-1 h-6 w-auto max-w-[35%] shrink-0 object-contain object-right" />
+            )}
           </div>
           <p class="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{summaryOf(e)}</p>
           {e.data.stack.length > 0 && (

@@ -5,6 +5,7 @@ org: Basalt-Actien-Gesellschaft
 start: 2022-10
 end: 2024-09
 location: Werhahn-Gruppe
+logo: /logos/cv-basalt.png
 stack:
   - Kubernetes
   - Helm

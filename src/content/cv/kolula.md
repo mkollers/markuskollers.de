@@ -5,6 +5,7 @@ org: kolula solutions UG
 start: 2024-11
 end: null
 location: Remote
+logo: /logos/cv-kolula.png
 stack:
   - IoT
   - Smart Locker
