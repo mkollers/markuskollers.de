@@ -7,7 +7,7 @@ export const defaultLang = 'de';
 
 export const ui = {
   de: {
-    'hero.eyebrow': '10+ Jahre · vom Engineer zum Gründer',
+    'hero.eyebrow': '15 Jahre · vom Engineer zum Gründer',
     'hero.name': 'Markus Kollers',
     'hero.keywords': 'Produkt und Engineering in einer Person.',
     'hero.tagline':
@@ -66,7 +66,7 @@ export const ui = {
     'legal.back': 'Zurück zur Startseite'
   },
   en: {
-    'hero.eyebrow': '10+ years · from engineer to founder',
+    'hero.eyebrow': '15 years · from engineer to founder',
     'hero.name': 'Markus Kollers',
     'hero.keywords': 'Product and engineering in one person.',
     'hero.tagline':
