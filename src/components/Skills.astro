@@ -9,8 +9,12 @@ interface Props {
 const { lang } = Astro.props;
 const t = useTranslations(lang);
 
-const groups = ['language', 'framework', 'cloud', 'data', 'practice'] as const;
 const all = await getCollection('skills');
+const nameOf = (s: (typeof all)[number]) => (lang === 'en' && s.data.nameEn ? s.data.nameEn : s.data.name);
+
+const leadership = all.filter((s) => s.data.category === 'leadership').sort((a, b) => a.data.order - b.data.order);
+
+const groups = ['language', 'framework', 'cloud', 'data', 'practice'] as const;
 const byGroup = groups.map((g) => ({
   key: g,
   items: all
@@ -37,6 +41,19 @@ const byGroup = groups.map((g) => ({
     </div>
   </div>
 
+  {
+    leadership.length > 0 && (
+      <div class="mb-8 border-b border-border pb-8">
+        <h3 class="font-mono text-xs uppercase tracking-wider text-accent-text">{t('skills.group.leadership')}</h3>
+        <div class="mt-3 flex flex-wrap gap-2">
+          {leadership.map((s) => (
+            <span class="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-text">{nameOf(s)}</span>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
   <div class="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
     {
       byGroup.map((g) => (
@@ -45,9 +62,9 @@ const byGroup = groups.map((g) => ({
           <div class="mt-3 flex flex-wrap gap-2">
             {g.items.map((s) =>
               s.data.tier === 'core' ? (
-                <span class="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-text">{s.data.name}</span>
+                <span class="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-text">{nameOf(s)}</span>
               ) : (
-                <span class="rounded-md border border-border px-2.5 py-1 text-xs text-muted">{s.data.name}</span>
+                <span class="rounded-md border border-border px-2.5 py-1 text-xs text-muted">{nameOf(s)}</span>
               )
             )}
           </div>

@@ -21,9 +21,9 @@ order: 6
 summary: >-
   In viereinhalb Jahren vom Software Engineer zum Head of Product. Eine Entwicklungsabteilung für
   kundenindividuelle Digitalisierungsprojekte aufgebaut und geführt, das agile Produktteam für die
-  Plattform „vertical desk" geleitet und Docker, Kubernetes sowie CI/CD als Standard eingeführt.
+  Plattform „vertical desk" geleitet und Angular, Docker, Kubernetes sowie CI/CD als Standard eingeführt.
 summaryEn: >-
   From software engineer to head of product in four and a half years. Built and led a development
   department for custom digitalisation projects, led the agile product team for the "vertical desk"
-  platform, and established Docker, Kubernetes and CI/CD as standards.
+  platform, and established Angular, Docker, Kubernetes and CI/CD as standards.
 ---

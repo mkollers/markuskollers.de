@@ -9,7 +9,6 @@ timeframe: since 2026
 stack:
   - Claude Code
   - Agentic Engineering
-  - Builder-Critic
   - Kubernetes
   - Helm
   - TypeScript
@@ -20,8 +19,7 @@ problem: >-
   building a product that fits where the work actually happens.
 solution: >-
   A cloud-native platform on Kubernetes, fully owned end to end: architecture, CI/CD, monitoring and a
-  security concept with EU hosting. Every change runs against an automated test suite in a builder-critic
-  pattern.
+  security concept with EU hosting. Every change runs against an automated test suite.
 result: >-
   Up to eight AI agents work on the build in parallel. As a solo founder that gives me the throughput of
   a small team.

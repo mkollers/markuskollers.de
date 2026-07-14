@@ -43,7 +43,13 @@ const summaryOf = (e: (typeof entries)[number]) => (lang === 'de' ? e.data.summa
               </div>
             </div>
             {e.data.logo && (
-              <img src={e.data.logo} alt="" loading="lazy" class="mt-1 h-6 w-auto max-w-[35%] shrink-0 object-contain object-right" />
+              <img
+                src={e.data.logo}
+                alt=""
+                loading="lazy"
+                style={`height:${Math.round(24 * e.data.logoScale)}px`}
+                class="mt-1 w-auto max-w-[35%] shrink-0 object-contain object-right"
+              />
             )}
           </div>
           <p class="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{summaryOf(e)}</p>

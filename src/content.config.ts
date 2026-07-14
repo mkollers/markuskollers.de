@@ -14,6 +14,7 @@ const cv = defineCollection({
     summary: z.string(),
     summaryEn: z.string(),
     logo: z.string().optional(),
+    logoScale: z.number().default(1),
     stack: z.array(z.string()).default([]),
     focus: z.array(z.enum(['leadership', 'tech', 'produkt'])).default([]),
     tier: z.enum(['main', 'earlier']).default('main'),
@@ -51,7 +52,8 @@ const skills = defineCollection({
   schema: z.object({
     id: z.string(),
     name: z.string(),
-    category: z.enum(['language', 'framework', 'cloud', 'data', 'practice']),
+    nameEn: z.string().optional(),
+    category: z.enum(['leadership', 'language', 'framework', 'cloud', 'data', 'practice']),
     tier: z.enum(['core', 'familiar']).default('familiar'),
     order: z.number()
   })

@@ -9,9 +9,11 @@ focus:
 tier: main
 order: 7
 summary: >-
-  Parallel ein Lehrauftrag im Modul „Neue Konzepte": Vorlesungen zu Digitalisierung, Softwarearchitektur,
-  Cloud, DevOps und KI sowie die Betreuung und Bewertung von Bachelorarbeiten.
+  Neben dem Job ein Lehrauftrag an der DHBW im Modul „Neue Konzepte". Ich habe Studierende an aktuelle
+  Themen wie Cloud, DevOps, Softwarearchitektur und KI herangeführt und Bachelorarbeiten betreut.
+  Praxiswissen weiterzugeben hält auch die eigene Perspektive scharf.
 summaryEn: >-
-  A part-time lectureship alongside my job in the "New Concepts" module: lectures on digitalisation,
-  software architecture, cloud, DevOps and AI, plus supervising and grading bachelor's theses.
+  A lectureship at DHBW alongside my job, in the "New Concepts" module. I introduced students to current
+  topics like cloud, DevOps, software architecture and AI, and supervised bachelor's theses. Passing on
+  practical knowledge keeps my own perspective sharp too.
 ---

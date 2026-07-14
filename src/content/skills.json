@@ -1,4 +1,53 @@
 [
+  {
+    "id": "lead-team",
+    "name": "Team-Aufbau & -Führung",
+    "nameEn": "Team building & leadership",
+    "category": "leadership",
+    "tier": "core",
+    "order": 1
+  },
+  {
+    "id": "lead-mentoring",
+    "name": "Mentoring & Coaching",
+    "nameEn": "Mentoring & coaching",
+    "category": "leadership",
+    "tier": "core",
+    "order": 2
+  },
+  {
+    "id": "lead-standards",
+    "name": "Technische Standards & Qualitätskultur",
+    "nameEn": "Technical standards & quality culture",
+    "category": "leadership",
+    "tier": "core",
+    "order": 3
+  },
+  {
+    "id": "lead-crossfunc",
+    "name": "Cross-funktionale Zusammenarbeit",
+    "nameEn": "Cross-functional collaboration",
+    "category": "leadership",
+    "tier": "core",
+    "order": 4
+  },
+  {
+    "id": "lead-stakeholder",
+    "name": "Stakeholder-Management",
+    "nameEn": "Stakeholder management",
+    "category": "leadership",
+    "tier": "core",
+    "order": 5
+  },
+  {
+    "id": "lead-remote",
+    "name": "Remote- & internationale Teams",
+    "nameEn": "Remote & international teams",
+    "category": "leadership",
+    "tier": "core",
+    "order": 6
+  },
+
   { "id": "typescript", "name": "TypeScript", "category": "language", "tier": "core", "order": 1 },
   { "id": "csharp", "name": "C# / .NET", "category": "language", "tier": "core", "order": 2 },
   { "id": "nodejs", "name": "Node.js", "category": "language", "tier": "core", "order": 3 },
