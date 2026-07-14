@@ -1,6 +1,6 @@
 ---
-role: Dozent (Lehrauftrag)
-roleEn: Lecturer (part-time)
+role: Gastdozent (Lehrauftrag)
+roleEn: Guest Lecturer (part-time)
 org: DHBW Mannheim
 start: 2018-10
 end: 2020-04
@@ -9,11 +9,9 @@ focus:
 tier: main
 order: 7
 summary: >-
-  Neben dem Job ein Lehrauftrag an der DHBW im Modul „Neue Konzepte". Ich habe Studierende an aktuelle
-  Themen wie Cloud, DevOps, Softwarearchitektur und KI herangeführt und Bachelorarbeiten betreut.
-  Praxiswissen weiterzugeben hält auch die eigene Perspektive scharf.
+  Ein Lehrauftrag an der DHBW im Modul „Neue Konzepte", von einem Freund initiiert und zu fünft getragen.
+  Ich war gelegentlich dabei und habe Vorlesungen zu aktuellen Themen wie Cloud, DevOps und KI übernommen.
 summaryEn: >-
-  A lectureship at DHBW alongside my job, in the "New Concepts" module. I introduced students to current
-  topics like cloud, DevOps, software architecture and AI, and supervised bachelor's theses. Passing on
-  practical knowledge keeps my own perspective sharp too.
+  A lectureship at DHBW in the "New Concepts" module, initiated by a friend and run by a team of five. I
+  joined occasionally, giving lectures on current topics like cloud, DevOps and AI.
 ---
