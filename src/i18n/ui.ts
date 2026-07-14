@@ -48,6 +48,9 @@ export const ui = {
       'Bei zwei Unternehmen war ich von der ersten Zeile Code bis zur fertigen Entwicklungsabteilung dabei. Aus dieser Spanne kommt meine Arbeitsweise: nah am Geschäft, hands-on in der Technik und mit dem Anspruch, Dinge zu Ende zu betreiben statt sie nur abzuliefern.',
     'approach.p2':
       'Am meisten reizt mich, ein Produkt von der Idee bis in den laufenden Betrieb selbst zu verantworten. „You build it, you run it" ist für mich keine Floskel, sondern die Art, wie ich Software baue.',
+    'life.label': 'Abseits des Jobs',
+    'life.body':
+      'Die meiste Zeit gehört meiner Familie. Ansonsten bin ich am Haus zu finden und mache dort fast alles selbst. Bauen liegt mir wohl, am Rechner wie am Bau.',
     'nav.highlights': 'Schwerpunkte',
     'nav.cases': 'Projekte',
     'nav.cv': 'Werdegang',
@@ -103,6 +106,9 @@ export const ui = {
       'At two companies I was there from the first line of code to a finished development department. That range shaped how I work: close to the business, hands-on in the tech, and set on running things properly rather than just shipping them.',
     'approach.p2':
       'What draws me most is owning a product from the idea to running in production. "You build it, you run it" is not a slogan for me, it is how I build software.',
+    'life.label': 'Beyond work',
+    'life.body':
+      'Most of my time goes to my family. Otherwise you will find me working on the house, where I do almost everything myself. Building seems to suit me, at the keyboard and on the building site.',
     'nav.highlights': 'Focus',
     'nav.cases': 'Work',
     'nav.cv': 'Career',
