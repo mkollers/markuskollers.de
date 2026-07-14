@@ -4,6 +4,7 @@ roleEn: Software Architect IoT / Cloud
 org: Tecan Software Competence Center
 start: 2021-10
 end: 2022-09
+location: Wiesbaden
 logo: /logos/cv-tecan.png
 logoScale: 0.75
 stack:
