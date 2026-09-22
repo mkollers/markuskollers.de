@@ -2,6 +2,7 @@
 role: Chief Technology Officer
 roleEn: Chief Technology Officer
 org: kolula solutions UG
+url: https://www.kolula.com
 start: 2024-11
 end: null
 location: Remote

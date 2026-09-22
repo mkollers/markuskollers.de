@@ -5,7 +5,7 @@ org: Nerdware
 url: https://nerdware.dev
 start: 2026-09
 end: null
-location: Nürnberg
+location: Remote
 logo: /logos/cv-nerdware.png
 logoScale: 0.6
 stack:
