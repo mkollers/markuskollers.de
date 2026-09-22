@@ -2,9 +2,10 @@
 role: Gründer & Geschäftsführer
 roleEn: Founder & Managing Director
 org: Qrafto UG
+url: https://qrafto.de
 start: 2026-01
 end: null
-location: Remote
+location: Frankfurt
 logo: /logos/qrafto.svg
 stack:
   - B2B-SaaS

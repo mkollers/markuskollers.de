@@ -8,6 +8,7 @@ const cv = defineCollection({
     role: z.string(),
     roleEn: z.string(),
     org: z.string(),
+    url: z.url().optional(),
     start: z.string(),
     end: z.string().nullable().default(null),
     location: z.string().optional(),
