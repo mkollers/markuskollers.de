@@ -38,7 +38,13 @@ const summaryOf = (e: (typeof entries)[number]) => (lang === 'de' ? e.data.summa
               <div class="font-mono text-xs text-muted">{period(e.data.start, e.data.end)}</div>
               <h3 class="mt-1 font-display text-lg font-medium text-ink">{roleOf(e)}</h3>
               <div class="font-mono text-xs uppercase tracking-wider text-accent-text">
-                {e.data.org}
+                {e.data.url ? (
+                  <a href={e.data.url} target="_blank" rel="noopener" class="hover:underline">
+                    {e.data.org}
+                  </a>
+                ) : (
+                  e.data.org
+                )}
                 {e.data.location && <span class="text-muted"> · {e.data.location}</span>}
               </div>
             </div>
